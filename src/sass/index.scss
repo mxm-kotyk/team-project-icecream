@@ -1,2 +1,19 @@
-@import './common';
-@import './example';
+@import './utilities/mixins';
+@import './utilities/visually-hidden';
+@import './utilities/variables';
+
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+@import './base/section';
+@import './base/modals';
+
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer_reviews';
+@import './components/contacts';
+@import './components/footer';

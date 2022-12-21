@@ -1,0 +1,24 @@
+.section {
+  padding: 60px 0;
+
+  &__title {
+    font-family: $ff-secondary;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(38 / 30);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $clr-text-light;
+
+    @include desktop {
+      font-size: 34px;
+      line-height: calc(43 / 34);
+    }
+
+    @include desktop {
+      font-size: 36px;
+      line-height: calc(45 / 36);
+    }
+  }
+}

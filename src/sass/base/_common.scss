@@ -1,0 +1,11 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  background-color: $clr-background;
+  color: $clr-text-dark;
+  font-family: $ff-primary;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
