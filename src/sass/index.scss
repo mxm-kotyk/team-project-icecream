@@ -6,7 +6,7 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
-@import './base/modals';
+@import './base/buttons';
 
 @import './components/header';
 @import './components/hero';
@@ -17,3 +17,8 @@
 @import './components/customer_reviews';
 @import './components/contacts';
 @import './components/footer';
+@import './components/modal-about-product';
+@import './components/modal-buy-now';
+@import './components/modal-franchise';
+@import './components/modal-location';
+@import './components/modal-read-more';
