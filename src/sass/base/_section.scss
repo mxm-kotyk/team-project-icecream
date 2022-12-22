@@ -11,7 +11,7 @@
     text-transform: uppercase;
     color: $clr-text-light;
 
-    @include desktop {
+    @include tablet {
       font-size: 34px;
       line-height: calc(43 / 34);
     }
