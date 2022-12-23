@@ -1,0 +1,142 @@
+.btn {
+    width: 152px;
+    height: 42px;
+ 
+    position: relative;
+
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18/14);
+
+    cursor: pointer;
+}
+
+.btn-empty{
+    border: 2px solid $clr-accent;
+    border-radius: 10px;
+    background: none;
+    transition: border-color 300ms cubic-bezier(1, -0.14, 1, 1.29);
+    &:hover{
+        border-color: $clr-button-hover;}
+
+    &:focus{
+        color: $clr-text-light;   
+    }
+
+    &:disabled{
+        border-color: $clr-work-hrs;
+    }
+}
+
+.btn-filled{
+    border: 2px solid $clr-accent;
+    border-radius: 10px;
+    background: $clr-accent;
+    transition: border-color 300ms cubic-bezier(1, -0.14, 1, 1.29);
+    &:hover{
+        border-color: $clr-button-hover;
+        background-color:$clr-button-hover;
+    }
+
+    &:focus{
+        color: $clr-text-light;   
+        background-color: $clr-button-hover;
+        border-color: $clr-button-hover;
+    }
+
+    &:disabled{
+        border-color: $clr-work-hrs;
+        background-color:$clr-work-hrs;
+    }
+}
+
+.btn-words{
+    border: none;
+    background: none;
+    transition: color 250ms cubic-bezier(1, -0.14, 1, 1.29);
+    color: $clr-accent;
+    &:hover{
+        color: $clr-button-hover;
+    }
+
+    &:focus{
+        color: $clr-text-light;    
+    }
+
+    &:disabled{
+       color: $clr-work-hrs;
+    }
+}
+
+.socials-icons{
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+
+    fill: $clr-background;
+    background-color: $clr-accent;
+
+    &:hover,&:focus{
+        fill: $clr-text-light;
+    }
+
+}
+
+
+// ______________________________________WORKING ON BUTTON_____________________________________________________________
+
+
+.btn-rounded {
+    border-radius: 50px;
+    border: 1px solid #F8D24E;
+    
+}
+
+.btn-rounded::before {
+    transition: all 400ms cubic-bezier(1, -0.14, 1, 1.29);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 0%;
+    background: #0A8817;
+    
+    
+}
+
+.text-green {
+    color: black;
+    transition: color 250ms cubic-bezier(1,.12,.83,1.15);
+   
+}
+
+.btn.btn-rounded:hover .text-green{
+    color: aliceblue;
+}
+.btn.btn-rounded:hover::before {
+    background: #0A8817;
+    width: 100%;
+    box-shadow: inset 5px 5px 8px #076511,
+    inset -5px -5px 8px #0dab1d;
+    border: none;
+}
+
+.btn.btn-rounded:active::before {
+    background: #0A8817;
+    width: 100%;
+    box-shadow: inset 5px 5px 8px #076511,
+    inset -5px -5px 8px #0dab1d;
+    border: none;
+}
+
+
+/* __________________________button buy-now______________________________ */
+/* Бажання замудрити на це (https://codepen.io/dsyncerek/pen/zzqpEx) */
+    
+
+
+
