@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+  overflow: auto;
 }
 
 
@@ -24,8 +25,11 @@
 
     // display: flex;
     // flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
+    max-width: 280px;
+
+    
 }
 
 .about-product_title{
@@ -42,8 +46,10 @@ font-family: $ff-secondary;
 
     margin-bottom: 20px;
 }
-
-.about-product_ingredients-title{
+.ingredients{
+  margin-bottom: 40px;
+}
+.ingredients_title{
   font-family: $ff-primary ;
     font-style: normal;
     font-weight: 500;
@@ -57,13 +63,14 @@ font-family: $ff-secondary;
     color: $clr-text-dark ;
 
     margin-bottom: 24px;
+    justify-content: center;
 }
 
 
 
 
 
-.about-product_ingredients-item{
+.ingredients_item{
 font-family: $ff-primary;
   font-style: normal;
   font-weight: 400;
@@ -80,4 +87,63 @@ font-family: $ff-primary;
 
 
   margin-bottom: 20px;
+}
+
+
+.ingredients_text{
+
+  
+    display: flex;
+    width: 100%;
+}
+
+
+.about-product_form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.about-product_form-field{
+  position: relative;
+  width: 100%;
+}
+
+.about-product__input{
+    height: 42px;
+    width: 100%;
+
+    background: rgba(248, 210, 78, 0.1);
+      border: 1px solid $clr-background;
+      border-radius: 10px;
+
+      padding-left: 12px;
+
+
+ 
+}
+
+.about-product__label{
+  position: absolute;
+    top: 0;
+    left: 10.43px;
+    transform: translateY(50%);
+
+
+      font-family: $ff-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(20px/14px);
+        color: $clr-text-dark;
+}
+
+.about-product__textarea{
+  background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    width: 100%;
+    height: 84px;
 }
