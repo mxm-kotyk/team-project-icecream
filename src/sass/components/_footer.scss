@@ -109,6 +109,7 @@
     color: $clr-footer-copiright;
 
     @include tablet {
+        margin-bottom: 12px;
         line-height: 1.86;
         letter-spacing: 0.02em;
     }
