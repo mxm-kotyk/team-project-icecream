@@ -1,68 +1,60 @@
+.advantages__item {
+    width: 230px;
+    margin: 0 auto;
+}
 
-
-.advantages__list { 
+.advantages__icon {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 144px;
-   
-   
-}
-
-.advantages__item {
-    padding: 7px;   
+    align-items: center;
     width: 50px;
     height: 50px;
+    border: none;
     background-color: #F8D24E;
     border-radius: 50%;
-    margin: 0;
-        
-}
-
-.advantages__item::before{
-   
-
-    display: block; 
-    content:'';     
-    width: 36px;
-    height: 36px;    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;   
-}
-.advantages__item:nth-child(1):before {
-    background-image: url("../images/icon-cow.png");
-
-}
-.advantages__item:nth-child(2):before {
-    background-image: url("../images/icon-weight.png");
-    
-}
-.advantages__item:nth-child(3):before {
-    background-image: url("../images/icon-ice-cream.png");
-    
-}
-.advantages__content {
-    display: block;
+    padding: 0;
     margin: 0 auto;
-    width: 230px;
-    text-align: center;
+
+    position: relative;
 }
 
-.advantages__uptitle {
-   
+.advantages__icon::before {
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.cow::before {
+    background-image: url("../images/icon-cow.png");
+}
+
+.weight::before {
+    background-image: url("../images/icon-weight.png");    
+}
+.ice-cream::before {
+    background-image: url("../images/icon-ice-cream.png");    
+}
+
+.advantages__point {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 36px;
     line-height: calc(44 / 36);
     letter-spacing: 0.04em;
     color: #FCFCFC;
-    margin-bottom: 16px;
-    
+    margin-bottom: 18px;
+    margin-top: 16px;
 }
 
 .advantages__text {
+    text-align: center;
     font-weight: 700;
     font-size: 12px;
     line-height: calc(20 / 12);
-    color: #FCFCFC;    
+    color: #FCFCFC;  
+    padding-bottom: 28px; 
 }
