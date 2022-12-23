@@ -1,0 +1,168 @@
+.header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: space-between;
+  }
+
+  @include tablet {
+    padding-top: 20px;
+  }
+
+  @include desktop {
+    padding-top: 8px;
+    align-items: flex-end;
+  }
+}
+
+.logo {
+  z-index: 2;
+  @include tablet {
+    margin-right: auto;
+  }
+  @include desktop {
+    margin-right: 308px;
+  }
+}
+
+.navigation {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 64px;
+    background-color: $clr-background;
+    transition: transform 250ms ease-in-out;
+
+    &.is-open {
+      transform: translateX(-100%);
+    }
+    @include tablet {
+      padding-top: 140px;
+      background-color: $clr-tablet-menu-bg;
+    }
+  }
+  @include desktop {
+    margin-right: auto;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+
+  @include tablet {
+    gap: 40px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 28px;
+  }
+}
+
+.navigation__link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(39 / 32);
+  color: $clr-text-light;
+  transition: color 250ms ease-in-out;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+  @include desktop {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    &:hover {
+      color: $clr-accent;
+    }
+  }
+
+  &:active {
+    color: $clr-text-dark;
+  }
+}
+
+.buy-now__button {
+  width: 152px;
+  height: 42px;
+
+  @include desktop {
+    margin-bottom: 3px;
+  }
+}
+
+.mobile-visible {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-button {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+
+  @include tablet {
+    margin-right: 32px;
+
+    &.is-open {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+    }
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-button__icon {
+  fill: #ffffff;
+  transition: fill 250ms ease-in-out;
+
+  .menu-button:active & {
+    fill: $clr-text-dark;
+  }
+}
+
+.menu-button.is-open .menu-button__icon-burger {
+  display: none;
+}
+
+.menu-button__icon-close {
+  display: none;
+
+  .menu-button.is-open & {
+    display: block;
+  }
+}
+
+.desktop-visible {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+<header class="header">
+	<div class="header__container container">
+		<a href="./index.html" class="logo link">
+			<picture class="logo__image">
+				<source srcset="./images/logo-desktop.png 1x, ./images/logo-desktop-2x.png 2x"
+					media="(min-width: 1200px)">
+				<source srcset="./images/logo-tablet.png 1x, ./images/logo-tablet-2x.png 2x" media="(min-width: 768px)">
+				<source srcset="./images/logo-mobile.png 1x, ./images/logo-mobile-2x.png 2x" media="(max-width: 767px)">
+				<img src="./images/logo-desktop.png" alt="ice cream logo">
+			</picture>
+		</a>
+		<nav class="navigation" data-menu>
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">How it’s made?</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Our products</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+			</ul>
+			<button type="button" class="buy-now__button mobile-visible button">
+				Buy now
+				<svg width="12" height="12" class="buy-now__icon">
+					<use href="./images/icons.svg#icon-icon-small-arrow"></use>
+				</svg>
+			</button>
+		</nav>
+		<button type="button" class="menu-button" data-menu-button>
+			<svg width="32" height="32" class="menu-button__icon">
+				<use href="./images/icons.svg#icon-icon-burger" class="menu-button__icon-burger"></use>
+				<use href="./images/icons.svg#icon-icon-close" class="menu-button__icon-close"></use>
+			</svg>
+		</button>
+		<button type="button" class="buy-now__button desktop-visible button">
+			Buy now
+			<svg width="12" height="12" class="buy-now__icon">
+				<use href="./images/icons.svg#icon-icon-small-arrow"></use>
+			</svg>
+		</button>
+	</div>
+</header>
