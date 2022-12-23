@@ -22,8 +22,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -64,6 +64,20 @@ font-family: $ff-secondary;
 
 
 .about-product_ingredients-item{
+font-family: $ff-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $clr-text-dark;
+
+
 
   margin-bottom: 20px;
 }
