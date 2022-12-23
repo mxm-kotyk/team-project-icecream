@@ -23,7 +23,9 @@
     border-radius: 10px;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .about-product_title{
@@ -36,5 +38,27 @@ font-family: $ff-secondary;
     align-items: center;
     text-align: center;
 
-    color: #131313;
+    color: $clr-text-dark;
+
+    margin-bottom: 20px;
+}
+
+.about-product_ingredients-title{
+  font-family: $ff-primary ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(28px/20px);
+   
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    color: $clr-text-dark ;
+}
+
+
+.about-product_ingredients-item{
+
+  margin-bottom: 20px;
 }
