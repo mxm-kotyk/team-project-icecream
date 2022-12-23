@@ -1,3 +1,15 @@
+.footer__wrap {
+    @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
+
+    @include desktop {
+        
+    }
+}
+
 .footer__primary-text {
     margin-bottom: 16px;
     font-weight: 700;
@@ -5,6 +17,20 @@
     line-height: calc(22 / 18);
     text-transform: uppercase;
     color: $clr-text-light;
+
+    @include tablet {
+        margin-bottom: 0px;
+        font-size: 26px;
+        line-height: calc(32 / 26);
+        letter-spacing: 0.04em;
+    };
+
+    @include desktop {
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: calc(37 / 30);
+    }
 }
 
 .footer__secondary-text{
@@ -14,11 +40,42 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $clr-text-light;
+
+    @include tablet {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+        letter-spacing: 0.06em;
+    };
+
+    @include desktop {
+        font-size: 58px;
+        line-height: calc(71 / 58);
+    }
 }
 
-.footer__title,
+.footer__title {
+    max-width: 234px;
+    margin-bottom: 60px;
+    @include tablet {
+        max-width: 352px;
+        margin-bottom: 44px;
+    }
+
+    @include desktop {
+        max-width: 100%;
+        margin-bottom: 72px;
+    }
+}
+
 .footer__social-media {
     margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 72px;
+    }
+
+    @include desktop {
+        max-width: 100%;
+    }
 }
 
 .footer__contact {
@@ -27,9 +84,19 @@
     line-height: 1.86;
     text-align: right;
     color: $clr-text-dark;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    @include desktop {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
 }
 
-.footer_tel {
+.footer__tel {
     color: $clr-text-light;
 }
 
@@ -40,6 +107,15 @@
     line-height: 1.52;
     text-align: center;
     color: $clr-footer-copiright;
+
+    @include tablet {
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
+
+    @include desktop {
+        font-size: 12px;
+    }
 }
 
 .social-list {
@@ -47,6 +123,15 @@
     display: flex;
     gap: 20px;
     justify-content: flex-end;
+
+    @include tablet {
+        gap: 30px;
+        margin-bottom: 34px;
+    }
+
+    @include desktop {
+        margin-bottom: 40px;
+    }
 }
 
 .social-list__item {
