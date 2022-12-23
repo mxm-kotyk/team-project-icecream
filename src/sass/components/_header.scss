@@ -1,0 +1,52 @@
+.header {
+}
+
+.header__container {
+  display: flex;
+  padding-top: 12px;
+
+  @include tablet {
+    padding-top: 20px;
+  }
+
+  @include desktop {
+    padding-top: 8px;
+  }
+}
+.is-open {
+}
+.logo {
+}
+.link {
+}
+.logo__image {
+}
+.navigation {
+}
+.navigation__list {
+}
+.navigation__item {
+}
+.navigation__link {
+}
+.buy-now__button {
+}
+.mobile-visible {
+}
+.button {
+}
+.buy-now__icon {
+}
+.menu-button {
+}
+.menu-button__icon {
+}
+.menu-button__icon-burger {
+}
+.menu-button__icon-close {
+}
+.desktop-visible {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
