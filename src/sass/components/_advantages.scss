@@ -1,26 +1,44 @@
+.advantages {
+    padding-bottom: 32px;
+    
+    @include tablet {
+        padding-bottom: 40px;
+    }
+    @include desktop {
+        padding-bottom: 80px;
+    }
+}
 .advantages__list {
     @include tablet {
         display: flex;
         justify-content: center;
         gap: 80px;
-        padding-bottom: 40px;
+      
     }
     @include desktop {
-        gap: 32px;
-        padding-bottom: 80px;
+        gap: 32px;       
     }
 }
 
 .advantages__item {
     width: 230px;
     margin: 0 auto;
+  
     @include tablet {
         width: 152px;
         margin-right: 0;
         margin-left: 0;
+        
     }
     @include desktop {
         width: 368px;
+    }
+}
+
+.advantages__item:not(:last-child){
+    padding-bottom: 28px;
+    @include tablet {
+        padding-bottom: 0;
     }
 }
 
@@ -43,19 +61,41 @@
     display: inline-block;
     width: 36px;
     height: 36px;
+    background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
 }
 
 .cow::before {
     background-image: url("../images/icon-cow.png");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url("../images/icon-cow-2x.png");
+    }
+  }
 }
 
 .weight::before {
-    background-image: url("../images/icon-weight.png");    
+    background-image: url("../images/icon-weight.png"); 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url("../images/icon-weight-2x.png");
+    }
+  }   
 }
 .ice-cream::before {
-    background-image: url("../images/icon-ice-cream.png");    
+    background-image: url("../images/icon-ice-cream.png"); 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url("../images/icon-ice-cream-2x.png");
+    }
+  }   
 }
 
 .advantages__point {
@@ -71,6 +111,7 @@
     @include tablet {
         font-size: 48px;
         line-height: calc(59 / 48);
+        text-transform: lowercase;
         margin-top: 32px;
         margin-bottom: 12px;
     }
@@ -87,12 +128,12 @@
     font-size: 12px;
     line-height: calc(20 / 12);
     color: #FCFCFC;  
-    padding-bottom: 28px; 
+    
     @include tablet {
         font-weight: 400;
         font-size: 14px;
         line-height: calc(24 / 14);
-        padding-bottom: 0;
+       
     }
     @include desktop {
         font-size: 16px;
