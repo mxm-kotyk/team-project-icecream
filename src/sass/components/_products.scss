@@ -1,0 +1,284 @@
+.products {
+  background-image: url(../images/gallery-bg-mobile.jpg);
+  background-image: url(../images/gallery-bg-mobile-2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mobile {
+    background-image: url(../images/gallery-bg-tablet.jpg);
+    background-image: url(../images/gallery-bg-tablet-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: url(../images/gallery-bg-desktop.jpg);
+    background-image: url(../images/gallery-bg-desktop-2x.jpg);
+  }
+}
+
+.products__label {
+  margin-bottom: 12px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 148px;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    margin-bottom: 200px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    margin-bottom: 303px;
+  }
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  
+}
+.products__item {
+  width: 100%;
+  height: 420px;
+  border-radius: 24px;
+  position: relative;
+  display: block;
+
+  @media screen and (max-width:767px){
+    &:not(:last-child) {
+        margin-bottom: 168px;
+      }
+    }
+    @include mobile {
+      width: 280px;
+      margin: 0 auto;
+    }
+
+    @include tablet {
+      width: calc((100% - 32px)/3);
+      height: 428px;
+    }
+
+    @include tablet {
+      height: 536px;
+    }
+
+}
+
+.products__item--green {
+  background-color: #aec6a5;
+
+  &::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/buy-ice-cream.jpg);
+    background-image: url(../images/buy-ice-cream-2x.jpg);
+    position: absolute;
+    border-radius: 100px;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    border-bottom: 12px solid;
+    border-image: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7),
+      #d9d9d9
+    );
+
+    @include mobile {
+      background-image: url(../images/prod-ice-cream-tablet.jpg);
+      background-image: url(../images/prod-ice-cream-tablet-2x.jpg);
+    }
+
+    @include tablet {
+      background-image: url(../images/prod-ice-cream-desktop.jpg);
+      background-image: url(../images/prod-ice-cream-desktop-2x.jpg);
+    }
+
+    @include desktop {
+      width: 302px;
+      height: 302px;
+      top: -5%;
+      border-bottom: 16px solid;
+      border-radius: 150px;
+      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    }
+    
+  }
+}
+
+.products__item--yellow {
+  background-color: #efd478;
+
+  &::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/buy-ice-coffee.jpg);
+    background-image: url(../images/buy-ice-coffee.jpg);
+    position: absolute;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    border-bottom: 12px solid;
+    border-image: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7),
+      #d9d9d9
+    );
+
+    @include mobile {
+      background-image: url(../images/prod-ice-coffee-tablet.jpg);
+      background-image: url(../images/prod-ice-coffee-tablet-2x.jpg);
+    }
+
+    @include tablet {
+      background-image: url(../images/prod-ice-coffee-desktop.jpg);
+      background-image: url(../images/prod-ice-coffee-desktop-2x.jpg);
+    }
+
+    @include desktop {
+      width: 302px;
+      height: 302px;
+      top: -5%;
+      border-bottom: 16px solid;
+      border-radius: 150px;
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    }
+
+  }
+}
+
+.products__item--coral {
+  background-color: #d6936d;
+
+  &::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/buy-milkshake.jpg);
+    background-image: url(../images/buy-milkshake-2x.jpg);
+    position: absolute;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    border-bottom: 12px solid;
+    border-image: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7),
+      #d9d9d9
+    );
+
+    @include mobile {
+      background-image: url(../images/prod-milkshake-tablet.jpg);
+      background-image: url(../images/prod-milkshake-tablet-2x.jpg);
+    }
+
+    @include tablet {
+      background-image: url(../images/prod-milkshake-desktop.jpg);
+      background-image: url(../images/prod-milkshake-desktop-2x.jpg);
+    }
+
+    @include desktop {
+      width: 302px;
+      height: 302px;
+      top: -5%;
+      border-bottom: 16px solid;
+      border-radius: 150px;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.products__uptitle {
+  margin-top: 123px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    margin-top: 108px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+    margin-top: 165px;
+    margin-bottom: 66px;
+  }
+}
+.products__text {
+  margin: auto;
+  max-width: 200px;
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: auto;
+
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
+}
+.products__btn {
+  width: 40px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+}
