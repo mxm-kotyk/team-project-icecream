@@ -236,6 +236,7 @@ font-family: $ff-primary;
 
 
 .about-product_form{
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -258,6 +259,7 @@ font-family: $ff-primary;
 
 .about-product_form-field{
   position: relative;
+  
   width: 100%;
 }
 
@@ -270,13 +272,11 @@ font-family: $ff-primary;
       border-radius: 10px;
       padding: 0%;
       padding-left: 10.43px;
+      outline: none;
 
       @include tablet {
           padding-left: 16px;
         }
-
-
- 
 }
 
 .about-product__label{
@@ -293,10 +293,21 @@ font-family: $ff-primary;
         line-height: calc(20px/14px);
         color: $clr-text-dark;
 
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         @include tablet{
           left: 16px;
         }
 }
+
+ .about-product_form-field:focus-within >.about-product__label{
+  transform: translateY(-75%);
+ }
+ .about-product__input:not(:placeholder-shown) + .about-product__label{
+  transform: translateY(-75%);
+ }
+
+
 
 
 
@@ -309,7 +320,8 @@ font-family: $ff-primary;
           padding-top: 11px;
     width: 100%;
     height: 84px;
-
+    outline: none;
+    
     @include tablet {
         padding-left: 16px;
       }
