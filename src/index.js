@@ -1,2 +1,2 @@
-// import './js/script';
+import './js/script';
 
