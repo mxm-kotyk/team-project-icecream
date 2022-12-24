@@ -1,73 +1,70 @@
 .btn {
     width: 152px;
     height: 42px;
- 
+  
     position: relative;
-
+  
     font-family: $ff-primary;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: calc(18/14);
-
+  
     cursor: pointer;
-}
-
-.btn-empty{
+  }
+  
+  .btn-empty{
     border: 2px solid $clr-accent;
     border-radius: 10px;
     background: none;
-    transition: border-color 300ms cubic-bezier(1, -0.14, 1, 1.29);
-    &:hover{
-        border-color: $clr-button-hover;}
-
-    &:focus{
-        color: $clr-text-light;   
-    }
-
+    transition: border-color 250ms cubic-bezier(1, -0.14, 1, 1.29), color 250ms cubic-bezier(1, -.14, 1, 1.29);
+    &:active{
+        border-color: $clr-button-hover;
+        color: $clr-text-light;}
+  
     &:disabled{
-        border-color: $clr-work-hrs;
-    }
-}
-
-.btn-filled{
-    border: 2px solid $clr-accent;
+      border-color: $clr-work-hrs;}
+  
+    @include desktop {
+         &:hover{
+        border-color: $clr-button-hover;}
+         &:focus{
+      color: $clr-text-light; 
+      border-color: $clr-button-hover;}}
+  }
+  
+  .btn-filled{
+    border-color: transparent;
     border-radius: 10px;
     background: $clr-accent;
-    transition: border-color 300ms cubic-bezier(1, -0.14, 1, 1.29);
-    &:hover{
-        border-color: $clr-button-hover;
+    transition:  background-color 250ms cubic-bezier(1, -0.14, 1, 1.29), 
+                 color 250ms cubic-bezier(1, -.14, 1, 1.29);
+   
+    &:active{
         background-color:$clr-button-hover;
-    }
-
-    &:focus{
-        color: $clr-text-light;   
-        background-color: $clr-button-hover;
-        border-color: $clr-button-hover;
-    }
-
-    &:disabled{
-        border-color: $clr-work-hrs;
-        background-color:$clr-work-hrs;
-    }
-}
-
+        color: $clr-text-light;}
+  
+    &:disabled{ background-color:$clr-work-hrs;}
+  
+    @include desktop{
+      &:hover{background-color:$clr-button-hover;} 
+      &:focus{ background-color:$clr-button-hover; color: $clr-text-light;}}
+  }
+  
 .btn-words{
     border: none;
     background: none;
     transition: color 250ms cubic-bezier(1, -0.14, 1, 1.29);
     color: $clr-accent;
-    &:hover{
-        color: $clr-button-hover;
-    }
 
-    &:focus{
-        color: $clr-text-light;    
-    }
+    &:active{ color: $clr-button-hover; }
 
-    &:disabled{
-       color: $clr-work-hrs;
-    }
+    &:disabled{ color: $clr-work-hrs;}
+
+    @include desktop{
+         &:hover{ color: $clr-button-hover; } 
+        &:focus{ color: $clr-text-light; }
+    } 
 }
 
 .socials-icons{
@@ -77,6 +74,7 @@
 
     fill: $clr-background;
     background-color: $clr-accent;
+    transition: fill 250ms cubic-bezier(1, -0.14, 1, 1.29);
 
     &:hover,&:focus{
         fill: $clr-text-light;
@@ -103,7 +101,7 @@
     left: 0;
     border-radius: 50px;
     width: 0%;
-    background: #0A8817;
+    background-image: #0A8817;
     
     
 }
