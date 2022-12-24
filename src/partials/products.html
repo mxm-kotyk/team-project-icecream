@@ -1,6 +1,13 @@
 <div class="backdrop-about-product">
 <div class="modal-about-product">
 <h2 class="about-product_title">Chololate icecream</h2>
+
+<div class="prod__image-box">
+    <div class="prod__circle"></div>
+    <img  srcset="./images/about-prod.jpg 1x, ./images/about-prod-2x.jpg 2x"
+    src="./images/about-prod.jpg" class="prod__image"  width="132px">
+</div> 
+
 <div class="about-product_value">
     <ul class="value__list">
     <li class="value__item"><p class="value__text">320</p><span class="value__name">kcal</span></li>
@@ -10,7 +17,6 @@
     
     </ul>
 </div>
-
 <div class="ingredients">
     <h3 class="ingredients_title">Ingredients</h3>
     <ul class="ingredients_list">
@@ -23,7 +29,6 @@
     </ul>
 
 </div> 
-
 <div class="about-product_form">
     <div class="about-product_form-field">
         <input type="text" name="name" id="name" class="about-product__input">
@@ -43,7 +48,17 @@
     
     </div>
 </div>
+
+<button type="button" class="about-product__close">
+    <svg class="about-product__close-icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-icon-close"></use>
+    </svg>
+</button>
+
+<button type="button" class="about-product__button">Submit</button>
 </div>
+
+
 
 
 </div>
