@@ -11,15 +11,12 @@
     z-index: 3;
 
     opacity: 1;
-    transform: scale(1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-buy-now__backdrop--is-hidden {
     opacity: 0;
     pointer-events: none;
-    transform: scale(1.1);
 }
 
 .modal-buy-now__window {
@@ -27,7 +24,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45vh);
-
     width: 280px;
     padding: 28px;
 
