@@ -277,12 +277,12 @@
   line-height: calc(25 / 14);
   text-align: center;
   letter-spacing: 0.04em;
-  margin-bottom: auto;
+  margin: 0 auto;
+
 
   @include desktop {
     font-size: 16px;
     line-height: calc(28 / 16);
-    margin: 0 auto;
   }
 }
 .products__btn {
