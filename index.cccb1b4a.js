@@ -1,2 +1,0 @@
-(()=>{const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),o=document.querySelector("[data-body]");e.addEventListener("click",(()=>{const a="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!a),o.classList.toggle("no-scroll"),t.classList.toggle("is-open")}))})();
-//# sourceMappingURL=index.cccb1b4a.js.map
