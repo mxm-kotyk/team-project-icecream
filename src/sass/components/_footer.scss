@@ -22,7 +22,7 @@
 
     @include desktop {
         &::before {
-            left: (33px / 2);
+            left: calc(33px / 2);
         }
     }
 }
