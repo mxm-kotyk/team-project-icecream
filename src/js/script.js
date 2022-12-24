@@ -1,29 +1,21 @@
-// $(document).ready(function () {
-// 	$('.slider').slick();
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'vertical',
+//   loop: true,
+
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
 // });
-
-
-$(document).ready(function(){
-	$('.slider').slick({
-		arrows:false,
-		dots:true,
-		// slidesToShow:3,
-		// autoplay:true,
-		speed:1000,
-		autoplaySpeed:800,
-		responsive:[
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow:2
-				}
-			},
-			{
-				breakpoint: 550,
-				settings: {
-					slidesToShow:1
-				}
-			}
-		]
-	});
-});
