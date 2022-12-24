@@ -17,7 +17,6 @@
     border: 2px solid $clr-accent;
     border-radius: 10px;
     background: none;
-<<<<<<< Updated upstream
     transition: border-color 250ms cubic-bezier(1, -0.14, 1, 1.29), color 250ms cubic-bezier(1, -.14, 1, 1.29);
     &:active{
         border-color: $clr-button-hover;
@@ -51,53 +50,8 @@
       &:hover{background-color:$clr-button-hover;} 
       &:focus{ background-color:$clr-button-hover; color: $clr-text-light;}}
   }
-  
-=======
-    transition: border-color 300ms cubic-bezier(1, -0.14, 1, 1.29);
-
-    &:active{
-        border-color: $clr-button-hover;
-        color: $clr-text-light; 
-        
-    }
-    @include descktop {
-         &:hover{
-        border-color: $clr-button-hover;}
-        &:hover:focus{
-        color: $clr-text-light;   
-         }
-    }
-   
-
-    &:disabled{
-        border-color: $clr-work-hrs;
-    }
-}
-
-.btn-filled{
-    border-radius: 10px;
-    background: $clr-accent;
-    transition: border-color 300ms cubic-bezier(1, -0.14, 1, 1.29);
-
-    &:active{
-        background-color:$clr-button-hover;
-        color: $clr-text-light;   
-    }
-    &:hover{
-        background-color:$clr-button-hover;
-        &:focus{
-            color: $clr-text-light;   
-        }
-
-    }
 
 
-    &:disabled{
-        background-color:$clr-work-hrs;
-    }
-}
-
->>>>>>> Stashed changes
 .btn-words{
     border: none;
     background: none;
