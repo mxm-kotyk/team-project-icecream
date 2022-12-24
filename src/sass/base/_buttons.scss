@@ -89,12 +89,12 @@
 
 .btn-rounded {
     border-radius: 50px;
-    border: 1px solid #F8D24E;
+    border: 2px solid #F8D24E;
     
 }
 
 .btn-rounded::before {
-    transition: all 400ms cubic-bezier(1, -0.14, 1, 1.29);
+    transition: all 800ms cubic-bezier(1, -0.14, 1, 1.29);
     content: "";
     height: 100%;
     position: absolute;
@@ -102,25 +102,31 @@
     left: 0;
     border-radius: 50px;
     width: 0%;
-    background-image: #0A8817;
+    background-image: url(../images.jpg), linear-gradient(rgb(10, 136, 23, 0.3),rgb(10, 136, 23, 0.3));
+    background-position: bottom;
     
     
+    
+}
+.btn-rounded:hover{
+    border:none;
 }
 
-.text-green {
-    color: black;
-    transition: color 250ms cubic-bezier(1,.12,.83,1.15);
+// .text-green {
+//     color: black;
+//     transition: color 800ms cubic-bezier(1,.12,.83,1.15);
    
-}
+// }
 
 .btn.btn-rounded:hover .text-green{
-    color: aliceblue;
+    color: rgb(9, 11, 12);
 }
 .btn.btn-rounded:hover::before {
-    background: #0A8817;
+    background-image: url(../images.jpg), linear-gradient(rgb(10, 136, 23, 0.3),rgb(10, 136, 23, 0.3));
+    background-position: bottom;
     width: 100%;
-    box-shadow: inset 5px 5px 8px #076511,
-    inset -5px -5px 8px #0dab1d;
+    box-shadow: inset 2px 2px 2px #076511,
+    inset -2px -2px 3px #0dab1d;
     border: none;
 }
 
@@ -129,6 +135,7 @@
     width: 100%;
     box-shadow: inset 5px 5px 8px #076511,
     inset -5px -5px 8px #0dab1d;
+    border: none;
     border: none;
 }
 
