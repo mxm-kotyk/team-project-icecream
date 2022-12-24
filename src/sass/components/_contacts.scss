@@ -12,13 +12,12 @@ display: flex;
 flex-direction: column;
 align-items: baseline;
 max-width: 368px;
-height: 542px;
 }
 .list-boxes__contacts {
     width: 100%;
     display: flex;
-justify-content: space-between;
 margin-bottom: 60px;
+gap: 32px;
 }
 .name-yellow__contacts {
     padding: 4px 14px;
@@ -146,4 +145,45 @@ color: #131313;
 .svg-button__contacts {
     width: 12px;
     height: 12px;
+}
+@media  screen and (min-width: 320px) and (max-width:767px)
+{
+    .list-boxes__contacts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    margin-bottom: 20px;
+    gap: 16px;
+    }
+    .container__contacts {
+        max-width: 480px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .white-box__contacts {
+        width: 100%;
+        padding: 40px 24px;
+        max-width: 480px;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width:1199px)
+{
+    .list-boxes__contacts {
+        width: 100%;
+        display: flex;
+    margin-bottom: 40px;
+    gap: 16px;
+    }
+    .container__contacts {
+        max-width: 768px;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+    .white-box__contacts {
+        max-width: 224px;
+        padding: 40px 24px;
+    }
 }
