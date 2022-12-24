@@ -106,36 +106,36 @@ color: #131313;
     align-items: center;
     justify-content: center;
 }
-.text-in-buttons__contacts {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #131313;
-}
 .button-locations__contacts {
     margin-right: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+        font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #131313;
 }
 .button-franchise__contacts {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+        font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #131313;
 }
 .svg-button__contacts {
     width: 12px;
     height: 12px;
-}
-.hidden-text__contacts {
-    text-align: center;
-    opacity: 0;
-    margin: 0 auto;
 }
 .street__contacts:hover {
     text-decoration: underline;
