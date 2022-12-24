@@ -37,7 +37,6 @@
 
 
 .swiper {
-
     padding-top: 80px;
     width: 100%;
     height: 100%;
@@ -106,19 +105,10 @@
                 background-attachment: fixed;
     }
 }
-
-
-}
-
-.swiper-slide {
 }
 
 .swiper-slide img {
     margin: auto;
-}
-
-.swiper__photo {
-
 }
 
 .swiper__text {
@@ -136,6 +126,51 @@
         color: #FCFCFC;
         background: #84A178;
             border-radius: 10px;
+
+    @media screen and (min-width: 320px) {
+    
+            margin: auto;
+            width: 280px;
+            padding: 35px 39px;
+            margin-bottom: 32px;
+            margin-top: 32px;
+
+            font-weight: 400;
+                font-size: 12px;
+                line-height: 2.58;
+                text-align: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+            margin: auto;
+                width: 968px;
+                padding: 39px 47px;
+                margin-bottom: 32px;
+                margin-top: 32px;
+
+                font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.87;
+                
+                    text-align: center;
+                    letter-spacing: 0.04em;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin: auto;
+                width: 968px;
+                padding: 39px 47px;
+                margin-bottom: 32px;
+                margin-top: 32px;
+
+                font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.87;
+                
+                    text-align: center;
+                    letter-spacing: 0.04em;
+        }
+
 }
 
 .swiper__title {
@@ -146,6 +181,27 @@
         font-size: 20px;
         line-height: 1.85;                
         color: #131313;
+
+
+@media screen and (min-width: 320px) {
+        font-weight: 500;
+            font-size: 20px;
+            line-height: 1.85;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+    }
+
+
 }
 
 .swiper-pagination {
