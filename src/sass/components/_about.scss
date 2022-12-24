@@ -46,7 +46,10 @@
 .about__wrap {
     @include tablet {
         display: flex;
-        gap: 30px;
+        gap: 38px;
+    }
+    @include desktop {
+        gap: 109px;
     }
 }
 .about__photo-bgr {
@@ -85,44 +88,65 @@
         border-radius: 1852.2px;
     }
 }
-.about__txt-one {
-    margin-bottom: 4px;
-    @include tablet {
-        margin-bottom: 0px;
+
+.about__text-wrap{
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 121px;
     }
 }
-.about__txt-three {
-    display: none;
+
+.about__text-list {
     @include tablet {
-        display: block;
+        margin-bottom: 32px;
+    }  
+    @include desktop {
+        min-width: 463px;
+        margin-bottom: 54px;
     }
 }
-.text-part {
+.about__item{
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-width:767px) {
+        max-width: 220px;
+        &:nth-child(1){
+            margin-bottom: 4px;
+        }
+        }
+    @include tablet {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}
+.about__text {
     font-weight: 400;
     font-size: 12px;
     line-height: calc(21 / 12);
     text-align: center;
     letter-spacing: 0.04em;
     color: $clr-text-light;
-    margin-right: auto;
-    margin-left: auto;
-    @media screen and (max-width:767px) {
-        max-width: 220px;
-    }
     @include tablet {
-        &:not(:last-child){
-            margin-bottom: 8px;
-        }
-        &:last-child {
-            margin-bottom: 32px;
-        }
         text-align: start;
     }
+
     @include desktop {
-        &:last-child {
-            margin-bottom: 54px;
-        }
+        font-size: 14px;
+        line-height: calc(27 / 14);
+    }
+}
+.first-text{
+    @include desktop {
         font-size: 16px;
         line-height: calc(28 / 16);
+    }
+}
+.third-text{
+    display: none;
+    @include tablet {
+        display: block;
     }
 }
