@@ -1,12 +1,29 @@
+.footer__container {
+    position: relative;
+}
+
 .footer__wrap {
     @include tablet {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     }
+}
+
+.footer__thumb {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        max-width: 1167px;
+        left: 0;
+        border-top: 1px solid $clr-footer-border;
+    }
 
     @include desktop {
-        
+        &::before {
+            left: (33px / 2);
+        }
     }
 }
 
@@ -23,7 +40,7 @@
         font-size: 26px;
         line-height: calc(32 / 26);
         letter-spacing: 0.04em;
-    };
+    }
 
     @include desktop {
         margin-bottom: 14px;
@@ -33,7 +50,7 @@
     }
 }
 
-.footer__secondary-text{
+.footer__secondary-text {
     font-weight: 700;
     font-size: 34px;
     line-height: calc(41 / 34);
@@ -45,7 +62,7 @@
         font-size: 48px;
         line-height: calc(59 / 48);
         letter-spacing: 0.06em;
-    };
+    }
 
     @include desktop {
         font-size: 58px;
@@ -58,19 +75,19 @@
     margin-bottom: 60px;
     @include tablet {
         max-width: 352px;
-        margin-bottom: 44px;
+        margin-bottom: 32px;
     }
 
     @include desktop {
         max-width: 100%;
-        margin-bottom: 72px;
+        margin-bottom: 60px;
     }
 }
 
 .footer__social-media {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     @include tablet {
-        margin-bottom: 72px;
+        margin-bottom: 60px;
     }
 
     @include desktop {
@@ -101,7 +118,8 @@
 }
 
 .footer__copiright {
-    margin-bottom: 20px;
+    padding: 20px 0;
+    white-space: pre-line;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
@@ -109,14 +127,15 @@
     color: $clr-footer-copiright;
 
     @include tablet {
-        margin-bottom: 12px;
+        padding: 12px 0;
+        white-space: normal;
         line-height: 1.86;
         letter-spacing: 0.02em;
     }
 
     @include desktop {
         font-size: 12px;
-    }
+    };
 }
 
 .social-list {
