@@ -13,10 +13,12 @@
         display: flex;
         justify-content: center;
         gap: 80px;
+        padding: 0 44px;
       
     }
     @include desktop {
-        gap: 32px;       
+        gap: 32px;  
+        padding: 0;     
     }
 }
 
@@ -25,13 +27,13 @@
     margin: 0 auto;
   
     @include tablet {
-        width: 152px;
-        margin-right: 0;
-        margin-left: 0;
+
+        width: calc((100% - 160px) / 3);
         
     }
     @include desktop {
-        width: 368px;
+       
+        width: calc((100% - 64px) / 3);
     }
 }
 
