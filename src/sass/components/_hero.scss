@@ -4,6 +4,22 @@
   background-image: url('../images/hero-bg-mobile.png');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
+  @include pixel-ratio-x2 {
+    background-image: url('../images/hero-bg-mobile-2x.png');
+  }
+  @include mobile {
+    background-image: url('../images/hero-bg-tablet.png');
+    @include pixel-ratio-x2 {
+      background-image: url('../images/hero-bg-tablet-2x.png');
+    }
+    @include tablet {
+      background-image: url('../images/hero-bg-desktop.png');
+      @include pixel-ratio-x2 {
+        background-image: url('../images/hero-bg-desktop-2x.png');
+      }
+    }
+  }
 
   &__title {
     margin-bottom: 32px;
@@ -35,9 +51,12 @@
     text-decoration-line: underline;
   }
   &__main-img {
-    margin: 19 auto 0;
+    margin: 19px auto 0;
     width: 177px;
     height: 217px;
+  }
+  &__main-img-wrapper {
+    padding-left: 23px;
   }
   &__sub-img {
     display: none;
