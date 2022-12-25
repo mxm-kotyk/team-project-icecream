@@ -19,7 +19,7 @@
 }
 
 .logo {
-  z-index: 2;
+  z-index: 11;
   @include tablet {
     margin-right: auto;
   }
@@ -48,6 +48,7 @@
 
     &.is-open {
       transform: translateX(-100%);
+      z-index: 10;
     }
     @include tablet {
       padding-top: 140px;
@@ -125,7 +126,7 @@
   padding: 0;
   background-color: transparent;
   border: none;
-  z-index: 2;
+  z-index: 11;
 
   @include tablet {
     margin-right: 32px;
