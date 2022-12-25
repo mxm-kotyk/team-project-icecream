@@ -92,7 +92,8 @@
     padding-top: 13px;
     padding-bottom: 13px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $clr-accent;
     }
   }

@@ -99,6 +99,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  color: $clr-text-dark;
   @include tablet {
     width: 145px;
     font-size: 14px;
