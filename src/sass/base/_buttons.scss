@@ -24,7 +24,11 @@
     transition: border-color 150ms cubic-bezier(1, -0.14, 1, 1.29), color 150ms cubic-bezier(1, -.14, 1, 1.29);
     @media screen and (max-width: 767px) { &:active{
         border-color: $clr-button-hover;
-        color: $clr-text-light;}}
+        color: $clr-text-light;
+        &:active .btn-icon{
+          fill: $clr-text-light;
+        }
+      }}
   
     &:disabled{
       border-color: $clr-work-hrs;}
@@ -50,7 +54,11 @@
    
     @media screen and (max-width: 767px) { &:active{
         background-color:$clr-button-hover;
-        color: $clr-text-light;}}
+        color: $clr-text-light;}
+       &:active .btn-icon{
+          fill: $clr-text-light;
+        }
+      }
   
     &:disabled{ background-color:$clr-work-hrs;}
   
@@ -67,7 +75,11 @@
     transition: color 150ms cubic-bezier(1, -0.14, 1, 1.29);
     color: $clr-accent;
 
-    @media screen and (max-width: 767px) { &:active{ color: $clr-button-hover; }}
+    @media screen and (max-width: 767px) { &:active{ color: $clr-button-hover;}
+     &:active .btn-icon{
+          fill: $clr-text-light;
+        }
+    }
 
     &:disabled{ color: $clr-work-hrs;}
 
