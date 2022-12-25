@@ -11,16 +11,16 @@
   @include mobile {
     background-image: url(../images/gallery-bg-tablet.jpg);
     @include pixel-ratio-x2 {
-    background-image: url(../images/gallery-bg-tablet-2x.jpg);
+      background-image: url(../images/gallery-bg-tablet-2x.jpg);
+    }
   }
-}
 
   @include tablet {
     background-image: url(../images/gallery-bg-desktop.jpg);
     @include pixel-ratio-x2 {
-    background-image: url(../images/gallery-bg-desktop-2x.jpg);
+      background-image: url(../images/gallery-bg-desktop-2x.jpg);
+    }
   }
-}
 }
 
 .products__label {
@@ -72,14 +72,12 @@
   gap: 168px;
 
   @include tablet {
-    gap:16px;
+    gap: 16px;
   }
 
   @include desktop {
-    gap:29px;
+    gap: 29px;
   }
-
-
 }
 .products__item {
   width: 280px;
@@ -90,7 +88,6 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 0 40px;
-
 
   @include tablet {
     width: calc((100% - 32px) / 3);
@@ -124,7 +121,7 @@
   background-image: linear-gradient(
     0deg,
     rgba(156, 190, 143, 0.7),
-    rgba(156, 190, 143, 0.7),
+    rgba(156, 190, 143, 0.7)
   );
   background-color: $clr-pagination-inactive;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
@@ -134,7 +131,7 @@
   background-image: linear-gradient(
     0deg,
     rgba(248, 210, 78, 0.7),
-    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
   );
   background-color: $clr-pagination-inactive;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
@@ -144,7 +141,7 @@
   background-image: linear-gradient(
     0deg,
     rgba(213, 117, 63, 0.7),
-    rgba(213, 117, 63, 0.7),
+    rgba(213, 117, 63, 0.7)
   );
   background-color: $clr-pagination-inactive;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
@@ -183,8 +180,8 @@
       background-image: url(../images/prod-ice-cream-desktop.jpg);
       @include pixel-ratio-x2 {
         background-image: url(../images/prod-ice-cream-desktop-2x.jpg);
+      }
     }
-  }
 
     @include desktop {
       width: 302px;
@@ -219,16 +216,16 @@
     @include mobile {
       background-image: url(../images/prod-ice-coffee-tablet.jpg);
       @include pixel-ratio-x2 {
-      background-image: url(../images/prod-ice-coffee-tablet-2x.jpg);
+        background-image: url(../images/prod-ice-coffee-tablet-2x.jpg);
+      }
     }
-  }
 
     @include tablet {
       background-image: url(../images/prod-ice-coffee-desktop.jpg);
       @include pixel-ratio-x2 {
-      background-image: url(../images/prod-ice-coffee-desktop-2x.jpg);
+        background-image: url(../images/prod-ice-coffee-desktop-2x.jpg);
+      }
     }
-  }
 
     @include desktop {
       width: 302px;
@@ -263,16 +260,16 @@
     @include mobile {
       background-image: url(../images/prod-milkshake-tablet.jpg);
       @include pixel-ratio-x2 {
-      background-image: url(../images/prod-milkshake-tablet-2x.jpg);
+        background-image: url(../images/prod-milkshake-tablet-2x.jpg);
+      }
     }
-  }
 
     @include tablet {
       background-image: url(../images/prod-milkshake-desktop.jpg);
       @include pixel-ratio-x2 {
-      background-image: url(../images/prod-milkshake-desktop-2x.jpg);
+        background-image: url(../images/prod-milkshake-desktop-2x.jpg);
+      }
     }
-  }
 
     @include desktop {
       width: 302px;
@@ -312,7 +309,6 @@
   letter-spacing: 0.04em;
   margin: 0 auto;
 
-
   @include desktop {
     font-size: 16px;
     line-height: calc(28 / 16);
@@ -337,8 +333,10 @@
   }
 }
 
-.products__icon{
+.products__icon {
   fill: $clr-text-dark;
+  transition: fill $transition;
+
   .products__btn:active & {
     fill: $clr-button-hover;
   }
@@ -350,4 +348,3 @@
     }
   }
 }
-

@@ -36,6 +36,7 @@
 // Fonts:
 // Font-family primary: Montserrat, sans-serif
 // Font-family secondary: Seymour One, sans-serif
+// Transition time and function: 150ms cubic-bezier(0.4, 0, 0.2, 1)
 
 $clr-background: #84a178;
 $clr-accent: #f8d24e;
@@ -59,3 +60,5 @@ $clr-work-hrs: #ababab;
 
 $ff-primary: 'Montserrat', sans-serif;
 $ff-secondary: 'Seymour One', sans-serif;
+
+$transition: 150ms cubic-bezier(1, -0.14, 1, 1.29);

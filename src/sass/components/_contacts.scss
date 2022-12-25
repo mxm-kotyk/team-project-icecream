@@ -1,3 +1,7 @@
+.contacts {
+  padding-bottom: 120px;
+}
+
 .container__contacts {
   max-width: 1200px;
   padding: 0 16px;
@@ -39,10 +43,9 @@
   line-height: 150%;
   color: #131313;
   margin-bottom: 4px;
+  transition: text-decoration $transition;
 }
-.links__contacts:hover {
-  text-decoration: underline;
-}
+.links__contacts:hover,
 .links__contacts:focus {
   text-decoration: underline;
 }
@@ -60,6 +63,7 @@
   line-height: 183%;
   letter-spacing: 0.04em;
   color: #d6936d;
+  transition: text-decoration $transition;
 }
 .list-address__location::after {
   content: '';
@@ -113,6 +117,8 @@
 }
 .button-locations__contacts {
   margin-right: 16px;
+  width: 196px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,12 +126,11 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #131313;
 }
 .button-franchise__contacts {
+  width: 196px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,21 +138,17 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #131313;
 }
 .svg-button__contacts {
   width: 12px;
   height: 12px;
 }
-.street__contacts:hover {
-  text-decoration: underline;
-}
+.street__contacts:hover,
 .street__contacts:focus {
   text-decoration: underline;
 }
+
 @media screen and (max-width: 767px) {
   .list-boxes__contacts {
     width: 100%;
@@ -178,31 +179,26 @@
   .city__contacts {
     font-size: 12px;
     line-height: 186%;
-    /* or 22px */
     letter-spacing: 0.04em;
   }
   .street__contacts {
     font-size: 12px;
     line-height: 183%;
-    /* or 22px */
     letter-spacing: 0.04em;
   }
   .time-week__contacts {
     font-size: 12px;
     line-height: 186%;
-    /* or 22px */
   }
   .time-close__contacts {
     font-size: 12px;
     line-height: 186%;
-    /* or 22px */
     margin-bottom: 8px;
   }
 
   .links__contacts {
     font-size: 12px;
     line-height: 160%;
-    /* or 19px */
     margin-bottom: 6px;
   }
   .list-buttons__contacts {
@@ -247,31 +243,26 @@
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 186%;
-    /* identical to box height, or 26px */
     letter-spacing: 0.04em;
   }
   .street__contacts {
     font-size: 14px;
     line-height: 183%;
-    /* or 26px */
     letter-spacing: 0.04em;
   }
   .time-week__contacts {
     font-size: 14px;
     line-height: 186%;
-    /* identical to box height, or 26px */
     color: #131313;
   }
   .time-close__contacts {
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 186%;
-    /* identical to box height, or 26px */
   }
   .links__contacts {
     margin-bottom: 4px;
     font-size: 14px;
     line-height: 150%;
-    /* identical to box height, or 21px */
   }
 }
