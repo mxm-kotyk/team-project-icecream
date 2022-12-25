@@ -1,19 +1,26 @@
 .products {
   background-image: url(../images/gallery-bg-mobile.jpg);
-  background-image: url(../images/gallery-bg-mobile-2x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @include pixel-ratio-x2 {
+    background-image: url(../images/gallery-bg-mobile-2x.jpg);
+  }
+
   @include mobile {
     background-image: url(../images/gallery-bg-tablet.jpg);
+    @include pixel-ratio-x2 {
     background-image: url(../images/gallery-bg-tablet-2x.jpg);
   }
+}
 
   @include tablet {
     background-image: url(../images/gallery-bg-desktop.jpg);
+    @include pixel-ratio-x2 {
     background-image: url(../images/gallery-bg-desktop-2x.jpg);
   }
+}
 }
 
 .products__label {
@@ -318,6 +325,8 @@
   display: inline-block;
   margin-top: auto;
   margin-bottom: 16px;
+  cursor: pointer;
+  outline: none;
 
   @include tablet {
     margin-bottom: 12px;
@@ -327,6 +336,18 @@
     margin-bottom: 60px;
   }
 }
+
 .products__icon{
   fill: $clr-text-dark;
+  .products__btn:active & {
+    fill: $clr-button-hover;
+  }
+
+  @include desktop {
+    .products__btn:hover &,
+    .products__btn:focus & {
+      fill: $clr-button-hover;
+    }
+  }
 }
+
