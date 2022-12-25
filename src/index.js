@@ -12,6 +12,6 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("modal-about-product__backdrop--is-hidden");
+    refs.modal.classList.toggle("modal-backdrop-about-product--is-hidden");
   }
 })();
