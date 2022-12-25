@@ -278,6 +278,7 @@ font-family: $ff-primary;
       &:hover,
         &:focus {
           border-color: $clr-accent ;
+          background-color: #fdf3ce;
         }
 
       @include tablet {
@@ -339,6 +340,7 @@ font-family: $ff-primary;
     &:hover,
       &:focus {
         border-color: $clr-accent ;
+        background-color: #fdf3ce;
       }
 
     @include tablet {
