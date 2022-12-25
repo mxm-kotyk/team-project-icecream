@@ -51,44 +51,45 @@
         gap: 109px;
     }
 }
-.about__photo-bgr {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 62px;
-    position: relative;
-    aspect-ratio: 1;
-    max-width: 279px;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    border-radius: 140px; 
-    @include tablet {
-        min-width: 330px;
-        min-height: 330px;
-        border-radius: 165px;
-        margin-bottom: 0;
-    }
-    @include desktop {
-        min-width: 490px;
-        min-height: 490px;
-        border-radius: 250px;
-    }
-}
+// .about__photo-bgr {
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-bottom: 62px;
+//     position: relative;
+//     aspect-ratio: 1;
+//     max-width: 279px;
+//     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+//     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+//     border-radius: 140px; 
+//     @include tablet {
+//         min-width: 330px;
+//         min-height: 330px;
+//         border-radius: 165px;
+//         margin-bottom: 0;
+//     }
+//     @include desktop {
+//         min-width: 490px;
+//         min-height: 490px;
+//         border-radius: 250px;
+//     }
+// }
 
-.about__photo {
-    position: absolute;
-    top: 22px;
-    border-radius: 140px;
-    @include tablet {
-        top: 26px;
-        border-radius: 1228px;
-    }
-    @include desktop {
-        top: 39px;
-        border-radius: 1852.2px;
-    }
-}
+// .about__photo {
+//     position: absolute;
+//     top: 22px;
+//     border-radius: 140px;
+//     @include tablet {
+//         top: 26px;
+//         border-radius: 1228px;
+//     }
+//     @include desktop {
+//         top: 39px;
+//         border-radius: 1852.2px;
+//     }
+// }
 
 .about__text-wrap{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,6 +97,20 @@
     @include desktop {
         margin-right: 121px;
     }
+}
+
+.about__text-wrap::before {
+    content: '';
+    position: absolute;
+    background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 140px; 
+    aspect-ratio: 1;
+    max-width: 279px;
+    right: 0;
+    
+
+
 }
 
 .about__text-list {
