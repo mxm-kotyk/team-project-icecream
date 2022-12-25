@@ -153,6 +153,10 @@
 }
 
 .about__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
     width: 164px;
     height: 42px;
     @media screen  and (max-width:767px) {
