@@ -1,0 +1,214 @@
+/***-----------------Модалка----------*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--backdrop-color-fon);
+
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 28px;
+
+    // overflow: auto;
+    background: $clr-text-light;
+    border: 2px solid $clr-accent;
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mobile {
+        width: 450px;
+        height: 609px;
+    }
+
+    // @include tablet {
+    //     width: 528px;
+    //     height: 581px;
+    //     padding: 60px 0;
+    // }
+
+    @include desktop {
+        width: 528px;
+        height: 581px;
+        padding: 60px 0;
+    }
+}
+.modal-title {
+    margin-bottom: 20px;
+    font-family: $ff-primary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.33;
+    color: $clr-text-dark;
+
+    // @include tablet {
+    //     margin-bottom: 24px;
+    // }
+    @include desktop {
+        margin-bottom: 24px;
+    }
+}
+.modal-text {
+    margin-bottom: 20px;
+    font-family: $ff-secondary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: $clr-text-dark;
+}
+// .input-label {
+//     display: block;
+//     font-weight: 400;
+//     font-size: 12px;
+//     margin-bottom: 4px;
+//     margin-top: 10px;
+//     letter-spacing: 0.01em;
+//     color: var(--accent-text-color);
+// }
+.button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+
+    min-width: 121px;
+    height: 42px;
+    border-radius: 10px;
+
+    color: $clr-text-dark;
+    background-color: $clr-accent;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: $clr-button-hover;
+}
+// @include tablet {
+//     margin-bottom: 32px;
+// }
+@include desktop {
+    margin-bottom: 32px;
+}
+}
+.input-wrapper {
+    position: relative;
+}
+.modal-input {
+    margin-bottom: 12px;
+    width: 100%;
+    height: 32px;
+    padding-left: 12px;
+    cursor: pointer;
+
+    // background: rgba(248, 210, 78, 0.1);
+    font-family: $ff-primary;
+    font-size: 12px;
+    line-height: 1.41;
+    color: $clr-text-dark;
+
+    border: 1px solid $clr-background;
+    border-radius: 10px;
+
+    &:focus {
+        border-color: var(--title-text-color);
+    }
+    &:focus + .input-icon {
+        fill: var(--title-text-color);
+    }
+    &:not(:focus):not(:placeholder-shown):valid {
+        background-color: rgba(0, 128, 0, 0.276);
+    }
+    &:not(:focus):not(:placeholder-shown):invalid {
+        background-color: rgba(128, 36, 0, 0.276);
+    }
+    &::placeholder, & {
+        font-size: 12px;
+        line-height: 1.16;
+        background: rgba(248, 210, 78, 0.1);
+        color: $clr-text-dark;
+    }
+    // @include tablet {
+    //     margin-bottom: 16px;
+    //     width: 368px;
+    // }
+    @include desktop {
+        margin-bottom: 16px;
+        width: 368px;
+    }
+}
+.text-area {
+    width: 100%;
+    height: 64px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 12px;
+
+    font-family: $ff-primary;
+    // font-size: 12px;
+    // line-height: 1.41;
+    color: $clr-text-dark;
+
+    border: 1px solid $clr-background;
+    border-radius: 10px;
+
+    resize: none;
+
+    &::placeholder, & {
+        font-size: 12px;
+        line-height: 1.16;
+        background: rgba(248, 210, 78, 0.1);
+        color: $clr-text-dark;
+    }
+}
+.button-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid var(--button-modal-color);
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--white-fons-color);
+
+    &:hover,
+    &:focus {
+    color: var(--title-text-color);
+    border: 1px solid var(--title-text-color);
+}
+}
+.modal-icon {
+    fill: currentColor;
+}
+.modal-form .button-primary {
+    margin: 0 auto;
+}
