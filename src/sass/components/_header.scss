@@ -30,6 +30,7 @@
 
 .navigation {
   display: flex;
+  z-index: 3;
   @media screen and (max-width: 1199px) {
     position: fixed;
     top: 0;
@@ -124,7 +125,7 @@
   padding: 0;
   background-color: transparent;
   border: none;
-  z-index: 2;
+  z-index: 3;
 
   @include tablet {
     margin-right: 32px;
