@@ -9,6 +9,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   
+    overflow: auto;
 }
 
 
@@ -22,18 +23,16 @@
     border: 2px solid #F8D24E;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    // max-width: 280px;
-    height: 100%;
+    width: 280px;
+      height: 968px;
     z-index: 1;
-    overflow: auto;
+    
+    
 
-    @include mobile{
-      width: 280px;
-      height: 100%;
-    }
+   
     @include tablet{
       width: 568px;
-      height: 100%;
+      height: 996px;
       padding: 32px 40px;
     }
 }
@@ -261,6 +260,8 @@ font-family: $ff-primary;
   position: relative;
   
   width: 100%;
+
+  
 }
 
 .about-product__input{
@@ -273,6 +274,11 @@ font-family: $ff-primary;
       padding: 0%;
       padding-left: 10.43px;
       outline: none;
+
+      &:hover,
+        &:focus {
+          border-color: $clr-accent ;
+        }
 
       @include tablet {
           padding-left: 16px;
@@ -328,7 +334,13 @@ font-family: $ff-primary;
     width: 100%;
     height: 84px;
     outline: none;
-    
+    resize: none;
+
+    &:hover,
+      &:focus {
+        border-color: $clr-accent ;
+      }
+
     @include tablet {
         padding-left: 16px;
       }
