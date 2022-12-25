@@ -40,9 +40,18 @@
                 </div>
             </div>
             <div class="modal-buy-now__input-list">
-                <input class="modal-buy-now__input" type="text" placeholder="Name" required minlength="1" pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
-                <input class="modal-buy-now__input" type="tel" placeholder="Phone" title="Формат номеру +380 (96) 111-11-11" required pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
-                <textarea class="modal-buy-now__textarea" placeholder="Comment"></textarea>
+                <div class="modal-buy-now__input-field">
+                    <input id="name" class="modal-buy-now__input" type="text" placeholder=" " required minlength="1" pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
+                    <label class="modal-buy-now__input-label" for="name">Name</label>
+                </div>
+                <div class="modal-buy-now__input-field">
+                    <input id="phone" class="modal-buy-now__input" type="tel" placeholder=" " required pattern="^[ 0-9]+$">
+                    <label class="modal-buy-now__input-label" for="phone">Phone</label>
+                </div>
+                <div class="modal-buy-now__input-field">
+                    <textarea id="comment" class="modal-buy-now__textarea" placeholder=" "></textarea>
+                    <label class="modal-buy-now__input-label" for="comment">Comment</label>
+                </div>
             </div>
             <button class="modal-buy-now__submit-btn" type="submit">Submit</button>
         </form>
