@@ -23,7 +23,7 @@
   }
   @include desktop {
     height: 591px;
-    padding-top: 14px;
+    padding-top: 45px;
     background-image: url('../images/hero-bg-desktop.png');
     @include pixel-ratio-x2 {
       background-image: url('../images/hero-bg-desktop-2x.png');
@@ -42,11 +42,21 @@
   @include tablet {
     margin-bottom: 24px;
   }
+  @include desktop {
+    width: 367px;
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
 }
 
 .hero__title-partial {
   font-size: 34px;
   line-height: calc(33 / 34);
+  @include desktop {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
 }
 
 .hero__prod-btn {
@@ -56,6 +66,10 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  @include desktop {
+    width: 134px;
+    height: 42px;
+  }
 }
 
 .hero__him-btn {
@@ -66,6 +80,14 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   text-decoration-line: underline;
+  @include tablet {
+    width: 114px;
+    height: 24px;
+  }
+  @include desktop {
+    width: 154px;
+    height: 40px;
+  }
 }
 
 .hero__main-img {
@@ -81,6 +103,11 @@
     height: 329px;
     transform: translateX(0);
   }
+  @include desktop {
+    width: 456px;
+    height: 560px;
+    left: 652px;
+  }
 }
 
 .hero__sub-info-wrapper {
@@ -93,12 +120,21 @@
     bottom: 12px;
     left: 32px;
   }
+  @include desktop {
+    gap: 16px;
+    bottom: 65px;
+    left: 16px;
+  }
 }
 
 .hero__sub-img {
   width: 152px;
   height: 152px;
   border-radius: 50%;
+  @include desktop {
+    width: 225px;
+    height: 225px;
+  }
 }
 
 .hero__sub-btn {
@@ -109,12 +145,26 @@
   fill: $clr-text-light;
 }
 
+.hero__sub-text-wrapper {
+  @include desktop {
+    position: absolute;
+    top: 67px;
+    left: 241px;
+  }
+}
+
 .hero__text {
   margin-bottom: 12px;
   width: 139px;
   font-size: 12px;
   line-height: 140%;
   color: $clr-text-light;
+  @include desktop {
+    margin-bottom: 24px;
+    width: 200px;
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
 .stat__list {
@@ -126,6 +176,11 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
+  }
+  @include desktop {
+    right: 16px;
+    bottom: 370px;
+    gap: 16px;
   }
 }
 
@@ -143,10 +198,18 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $clr-text-dark;
+  @include desktop {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
 }
 
 .stat {
   font-size: 8px;
   line-height: calc(10 / 8);
   color: $clr-text-light;
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
