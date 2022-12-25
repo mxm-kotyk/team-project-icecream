@@ -12,15 +12,18 @@
   
     cursor: pointer;
   }
-  
+  .btn-icon{
+    fill: currentColor;
+  }
+
   .btn-empty{
     border: 2px solid $clr-accent;
     border-radius: 10px;
     background: none;
     transition: border-color 250ms cubic-bezier(1, -0.14, 1, 1.29), color 250ms cubic-bezier(1, -.14, 1, 1.29);
-    &:active{
+    @media screen and (max-width: 767px) { &:active{
         border-color: $clr-button-hover;
-        color: $clr-text-light;}
+        color: $clr-text-light;}}
   
     &:disabled{
       border-color: $clr-work-hrs;}
@@ -30,7 +33,11 @@
         border-color: $clr-button-hover;}
          &:focus{
       color: $clr-text-light; 
-      border-color: $clr-button-hover;}}
+      border-color: $clr-button-hover;}
+      &:focus .btn-icon{
+        fill: $clr-text-light;
+      }
+    }
   }
   
   .btn-filled{
@@ -40,15 +47,16 @@
     transition:  background-color 250ms cubic-bezier(1, -0.14, 1, 1.29), 
                  color 250ms cubic-bezier(1, -.14, 1, 1.29);
    
-    &:active{
+    @media screen and (max-width: 767px) { &:active{
         background-color:$clr-button-hover;
-        color: $clr-text-light;}
+        color: $clr-text-light;}}
   
     &:disabled{ background-color:$clr-work-hrs;}
   
     @include desktop{
       &:hover{background-color:$clr-button-hover;} 
-      &:focus{ background-color:$clr-button-hover; color: $clr-text-light;}}
+      &:focus{ background-color:$clr-button-hover; color: $clr-text-light;}
+      &:focus .btn-icon{fill: $clr-text-light;}}
   }
 
 
@@ -58,13 +66,14 @@
     transition: color 250ms cubic-bezier(1, -0.14, 1, 1.29);
     color: $clr-accent;
 
-    &:active{ color: $clr-button-hover; }
+    @media screen and (max-width: 767px) { &:active{ color: $clr-button-hover; }}
 
     &:disabled{ color: $clr-work-hrs;}
 
     @include desktop{
          &:hover{ color: $clr-button-hover; } 
         &:focus{ color: $clr-text-light; }
+        &:focus .btn-icon{fill: $clr-text-light;}
     } 
 }
 
