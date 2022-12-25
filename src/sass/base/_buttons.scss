@@ -20,7 +20,7 @@
     border: 2px solid $clr-accent;
     border-radius: 10px;
     background: none;
-    transition: border-color 250ms cubic-bezier(1, -0.14, 1, 1.29), color 250ms cubic-bezier(1, -.14, 1, 1.29);
+    transition: border-color 150ms cubic-bezier(1, -0.14, 1, 1.29), color 150ms cubic-bezier(1, -.14, 1, 1.29);
     @media screen and (max-width: 767px) { &:active{
         border-color: $clr-button-hover;
         color: $clr-text-light;}}
@@ -44,7 +44,7 @@
     border-color: transparent;
     border-radius: 10px;
     background: $clr-accent;
-    transition:  background-color 250ms cubic-bezier(1, -0.14, 1, 1.29), 
+    transition:  background-color 150ms cubic-bezier(1, -0.14, 1, 1.29), 
                  color 250ms cubic-bezier(1, -.14, 1, 1.29);
    
     @media screen and (max-width: 767px) { &:active{
@@ -63,7 +63,7 @@
 .btn-words{
     border: none;
     background: none;
-    transition: color 250ms cubic-bezier(1, -0.14, 1, 1.29);
+    transition: color 150ms cubic-bezier(1, -0.14, 1, 1.29);
     color: $clr-accent;
 
     @media screen and (max-width: 767px) { &:active{ color: $clr-button-hover; }}
@@ -84,7 +84,7 @@
 
     fill: $clr-background;
     background-color: $clr-accent;
-    transition: fill 250ms cubic-bezier(1, -0.14, 1, 1.29);
+    transition: fill 150ms cubic-bezier(1, -0.14, 1, 1.29);
 
     &:hover,&:focus{
         fill: $clr-text-light;
