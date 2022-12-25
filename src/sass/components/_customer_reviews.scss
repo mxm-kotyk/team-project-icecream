@@ -80,7 +80,8 @@
 
 .swiper__text {
     margin: auto;
-    width: 280px;
+    max-width:100%;
+
     padding: 35px 39px;
     margin-bottom: 32px;
     margin-top: 32px;
@@ -94,23 +95,10 @@
     background: #84A178;
     border-radius: 10px;
 
-    @media screen and (min-width: 320px) {
-
-        margin: auto;
-        width: 280px;
-        padding: 35px 39px;
-        margin-bottom: 32px;
-        margin-top: 32px;
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 2.58;
-        text-align: center;
-    }
-
     @media screen and (min-width: 768px) {
         margin: auto;
-        width: 968px;
+    max-width: 100%;
+    
         padding: 39px 47px;
         margin-bottom: 32px;
         margin-top: 32px;
@@ -125,7 +113,8 @@
 
     @media screen and (min-width: 1200px) {
         margin: auto;
-        width: 968px;
+        max-width: 100%;
+
         padding: 39px 47px;
         margin-bottom: 32px;
         margin-top: 32px;
@@ -141,7 +130,8 @@
 }
 
 .swiper__title {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+        margin-top: 32px;
 
     text-align: center;
     font-weight: 500;
@@ -149,20 +139,18 @@
     line-height: 1.85;
     color: #131313;
 
-
-    @media screen and (min-width: 320px) {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.85;
-    }
-
     @media screen and (min-width: 768px) {
+
+        
+
         font-weight: 500;
         font-size: 16px;
         line-height: 1.88;
     }
 
     @media screen and (min-width: 1200px) {
+        
+
         font-weight: 500;
         font-size: 16px;
         line-height: 1.88;
@@ -220,4 +208,6 @@
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background: #84A178;
+    margin-left: 18px;
+
 }
