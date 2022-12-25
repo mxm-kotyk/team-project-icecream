@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 280px;
   min-height: 365px;
   background-color: $clr-text-light;
   top: 50%;
@@ -20,9 +20,6 @@
   transform: translate(-50%, -50%) scale(1);
   border-radius: 10px;
   padding: 28px;
-  @include mobile {
-    width: 280px;
-  }
   @include tablet {
     width: 568px;
     min-height: 458px;
@@ -76,8 +73,9 @@
 .mod-loc-img {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: auto;
+  margin-bottom: 20px;
   @include tablet {
+    margin-bottom: 32px;
     .mod-loc-img-tab {
       display: block;
     }
@@ -86,3 +84,18 @@
     }
   }
 }
+.mod-loc-btn {
+    width: 134px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    @include tablet {
+      width: 145px;
+      font-size: 14px;
+  line-height: calc(17 / 14);
+    }
+  }
