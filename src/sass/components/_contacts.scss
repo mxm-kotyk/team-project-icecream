@@ -1,5 +1,12 @@
 .contacts {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 
 .container__contacts {
