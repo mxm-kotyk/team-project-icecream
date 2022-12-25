@@ -1,8 +1,11 @@
+.hero {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .hero__container {
   position: relative;
   height: 454px;
-  padding-top: 50;
-  padding-bottom: 0;
+  padding-top: 50px;
   background-image: url('../images/hero-bg-mobile.png');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -91,11 +94,9 @@
 }
 
 .hero__sub-img {
-  @include tablet {
-    width: 152px;
-    height: 152px;
-    border-radius: 50%;
-  }
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
 }
 
 .hero__sub-btn {
@@ -112,18 +113,6 @@
   font-size: 12px;
   line-height: 140%;
   color: $clr-text-light;
-}
-
-.section__title {
-}
-
-.hero__text {
-}
-
-.hero__sub-btn {
-}
-
-.hero__sub-image {
 }
 
 .stat__list {
