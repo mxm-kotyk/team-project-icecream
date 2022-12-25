@@ -252,11 +252,13 @@
 .modal-buy-now__input:not(:placeholder-shown) + .modal-buy-now__input-label,
 .modal-buy-now__input:focus + .modal-buy-now__input-label {
     opacity: 0;
+    transform: translateY(-65%)
 }
 
 .modal-buy-now__textarea:not(:placeholder-shown) + .modal-buy-now__input-label,
 .modal-buy-now__textarea:focus + .modal-buy-now__input-label {
     opacity: 0;
+    transform: translateY(-65%)
 }
 
 .modal-buy-now__input {
@@ -293,10 +295,6 @@
         font-size: 14px;
         height: 42px;
     }
-}
-
-.modal-buy-now__input::placeholder {
-    
 }
 
 .modal-buy-now__textarea {
