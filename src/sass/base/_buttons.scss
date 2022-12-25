@@ -14,6 +14,7 @@
   }
   .btn-icon{
     fill: currentColor;
+    transition: fill 150ms cubic-bezier(1, -0.14, 1, 1.29);
   }
 
   .btn-empty{
