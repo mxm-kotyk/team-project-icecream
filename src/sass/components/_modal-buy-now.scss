@@ -244,6 +244,10 @@
         background-color: #f9fde4;
     }
 
+    &:not(:focus):not(:placeholder-shown):invalid {
+        border-color: rgb(255, 111, 111);
+    }
+
     @media screen and (min-width: 768px) {
         font-size: 14px;
         height: 42px;

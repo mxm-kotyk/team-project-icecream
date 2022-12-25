@@ -6,7 +6,7 @@
             </svg>
         </button>
         <p class="modal-buy-now__title">Buy now</p>
-        <form class="modal-buy-now__form" action="#">
+        <form class="modal-buy-now__form" action="#" autocomplete="off">
             <div class="modal-buy-now__radio-buttons">
                 <div class="modal-buy-now__radio-button">
                     <label class="modal-buy-now__radio-button-label" for="ice-cream">
@@ -16,7 +16,7 @@
                             <div class="bg-circle bg-circle--green"></div>
                             <p class="modal-buy-now__radio-button-title">ice cream</p>
                         </div>
-                    </label>  
+                    </label>
                 </div>
                 <div class="modal-buy-now__radio-button">
                     <label class="modal-buy-now__radio-button-label" for="ice-coffee">
@@ -40,9 +40,9 @@
                 </div>
             </div>
             <div class="modal-buy-now__input-list">
-                <input class="modal-buy-now__input" type="text" placeholder="Name">
-                <input class="modal-buy-now__input" type="text" placeholder="Phone">
-                <textarea class="modal-buy-now__textarea" name="" placeholder="Comment"></textarea>
+                <input class="modal-buy-now__input" type="text" placeholder="Name" required minlength="1" pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
+                <input class="modal-buy-now__input" type="tel" placeholder="Phone" title="Формат номеру +380 (96) 111-11-11" required pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                <textarea class="modal-buy-now__textarea" placeholder="Comment"></textarea>
             </div>
             <button class="modal-buy-now__submit-btn" type="submit">Submit</button>
         </form>
