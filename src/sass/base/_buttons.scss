@@ -50,7 +50,7 @@
     border-radius: 10px;
     background: $clr-accent;
     transition:  background-color 150ms cubic-bezier(1, -0.14, 1, 1.29), 
-                 color 250ms cubic-bezier(1, -.14, 1, 1.29);
+                 color 150ms cubic-bezier(1, -.14, 1, 1.29);
    
     @media screen and (max-width: 767px) { &:active{
         background-color:$clr-button-hover;
