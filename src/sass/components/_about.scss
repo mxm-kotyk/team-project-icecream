@@ -73,9 +73,22 @@
         background-position: center;
         background-size: cover;
         border-radius: 140px;
+        @include pixel-ratio-x2 {
+            background-image: url(../images/cow-mobile-2x.jpg);
+        }
+        @include mobile {
+            background-image: url(../images/cow-tablet.jpg);
+            @include pixel-ratio-x2 {
+                background-image: url(../images/cow-tablet-2x.jpg);
+                }
+        }
         @include tablet {
             top: 26px;
             border-radius: 1228px;
+            background-image: url(../images/cow-desktop.jpg);
+            @include pixel-ratio-x2 {
+                background-image: url(../images/cow-desktop-2x.jpg);
+            }
         }
         @include desktop {
             top: 39px;
