@@ -158,9 +158,62 @@ color: #131313;
     }
     .white-box__contacts {
         width: 100%;
-        padding: 40px 24px;
-        max-width: 480px;
+        padding: 40px 36px 24px 32px;
+        max-width: 280px;
     }
+        .name-yellow__contacts {
+            font-size: 12px;
+                line-height: 120%;
+                letter-spacing: 0.04em;
+                margin-bottom: 20px;
+        }
+                .city__contacts {
+                    font-size: 12px;
+                        line-height: 186%;
+                        /* or 22px */
+                        letter-spacing: 0.04em;
+                }
+                .street__contacts {
+                    font-size: 12px;
+                        line-height: 183%;
+                        /* or 22px */
+                        letter-spacing: 0.04em;
+                }
+             .time-week__contacts {
+                font-size: 12px;
+                    line-height: 186%;
+                         /* or 22px */
+                            }
+                            .time-close__contacts {
+                                font-size: 12px;
+                                    line-height: 186%;
+                                    /* or 22px */
+                            }
+                            .links__contacts {
+                                font-size: 12px;
+                                    line-height: 160%;
+                                    /* or 19px */
+                            }
+                                .list-buttons__contacts {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                }
+                                .button-locations__contacts {
+                                    margin-right: 0;
+                                    margin-bottom: 16px;
+                                }
+                                .list-times__contacts:after {
+                                    margin-top: 24px;
+                                    margin-bottom: 24px;
+                                }
+                                .list-address__location:after {
+                                    margin-top: 24px;
+                                }
+                                .list-times__contacts {
+                                    margin-top: 24px;
+                                }
 }
 
 @media  screen and (min-width: 768px) and (max-width:1199px)
@@ -180,4 +233,35 @@ color: #131313;
         max-width: 224px;
         padding: 40px 24px;
     }
+        .city__contacts {
+            margin-bottom:12px;
+            font-size: 14px;
+                line-height: 186%;
+                /* identical to box height, or 26px */
+                letter-spacing: 0.04em;
+        }
+                .street__contacts {
+                    font-size: 14px;
+                        line-height: 183%;
+                        /* or 26px */
+                        letter-spacing: 0.04em;
+                }
+                                .time-week__contacts {
+                                    font-size: 14px;
+                                        line-height: 186%;
+                                        /* identical to box height, or 26px */
+                                        color: #131313;
+                                }
+                                .time-close__contacts {
+                                    margin-bottom: 8px;
+                                    font-size: 14px;
+                                        line-height: 186%;
+                                        /* identical to box height, or 26px */
+                                }
+                                    .links__contacts {
+                                        margin-bottom:4px;
+                                        font-size: 14px;
+                                            line-height: 150%;
+                                            /* identical to box height, or 21px */
+                                    }
 }
