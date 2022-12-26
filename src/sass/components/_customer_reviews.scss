@@ -2,7 +2,7 @@
 
 
 .swiper {
-    padding-top: 150px;
+    padding-top: 80px;
     padding-bottom: 40px;
     width: 100%;
     height: 100%;
@@ -28,7 +28,7 @@
 
     @media screen and (min-width: 481px) {
         max-width: 768px;
-        padding-top: 220px;
+        padding-top: 100px;
 
         background-image:
             url(../images/gallery-bg-tablet.jpg);
@@ -52,7 +52,7 @@
 
     @media screen and (min-width: 769px) {
         max-width: 1600px;
-        padding-top: 240px;
+        padding-top: 140px;
         background-image:
             url(../images/gallery-bg-desktop.jpg);
 

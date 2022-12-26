@@ -1,94 +1,89 @@
-.gallery__thumb {
-    position: relative;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 
+.gallery__slider {
+    display: block;
     width: 100%;
-    height: 0px;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-wrap {
+    position: relative;
+    z-index: 10;
     margin: 0 auto;
 
-    // Desktop
-    @media screen and (min-width: 1200px) {
-        height: 388px;
-    }
-}
+    width: 280px;
+    height: 130px;
 
+    overflow: hidden;
 
-.gallery__img {
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 50;
-            
-            width:100%;
-            height: auto;
-            display: block;
-
-    border-radius: 24px;
-
-    animation-name: ice-cream;
-    animation-iteration-count: infinite;
-    animation-duration: 15s;
-    animation-timing-function: ease-in-out;
-
-    // Tablet
     @media screen and (min-width: 768px) {
-        top: -44px;
-        width: 100%;
-            height: auto;
-            display: block;
+        width: 704px;
+        height: 327px;
     }
 
-    // Desktop
     @media screen and (min-width: 1200px) {
-        top: -20px;
-        width: 100%;
-            height: auto;
-            display: block;
+        width: 1013px;
+        height: 422px;
     }
 }
 
-//  Changing the images
-.gallery__img:nth-of-type(1) {
-    animation-delay: 12s;
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    display: flex;
+    animation: slider 14s infinite;
 }
 
-.gallery__img:nth-of-type(2) {
-    animation-delay: 9s;
+.slider img {
+    float: left;
+    border-radius: 24px;
 }
 
-.gallery__img:nth-of-type(3) {
-    animation-delay: 6s;
-}
-
-.gallery__img:nth-of-type(4) {
-    animation-delay: 3s;
-}
-
-.gallery__img:nth-of-type(5) {
-    animation-delay: 0s;
-}
-
-
-// Animation Gallery
-
-@keyframes ice-cream {
+@keyframes slider {
     0% {
-        opacity: 1;
+        left: 0;
     }
 
-    17% {
-        opacity: 1;
-    }
+    20% {
+        left: 0;
+         }
 
     25% {
-        opacity: 0;
+        left: -100%;
     }
 
-    92% {
-        opacity: 0;
-    }
+    45% {
+    left: -100%;
+        }
 
-    100% {
-        opacity: 1;
-    }
+        50% {
+    left: -200%;
+        }
+
+          70% {
+    left: -200%;
+        }
+
+        75% {
+    left: -300%;
+        }
+
+         95% {
+    left: -300%;
+        }
+
+         100% {
+    left: -400%;
+        }
 }
+
