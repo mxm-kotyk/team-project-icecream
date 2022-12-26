@@ -108,6 +108,10 @@
 .buy-now__button {
   width: 152px;
   height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 
   @include desktop {
     margin-bottom: 3px;
