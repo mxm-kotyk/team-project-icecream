@@ -1,0 +1,71 @@
+<!-- Slider main container -->
+<section class="gallery">
+    <div class="swiper mySwiper container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+
+                <picture>
+                    <source srcset="
+                                ./images/cust-emily.jpg         1x,
+                                ./images/cust-emily-2x.jpg      2x
+                        " media="(min-width: 1200px)" />
+
+                    <img class="swiper__photo" src="./images/cust-emily.jpg" width="85" height="85" alt="Emily">
+                </picture>
+
+                <p class="swiper__text">I love visiting your cafe.
+                    You prepare the most delicious ice cream in Los Angeles!
+                    In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+                <h2 class="swiper__title">Emily, Los Angeles</h2>
+            </div>
+
+            <div class="swiper-slide">
+
+                <picture>
+                    <source srcset="
+                    ./images/cust-brian.jpg         1x,
+                    ./images/cust-brian-2x.jpg      2x
+                  " media="(min-width: 1200px)" />
+
+                    <img class="swiper__photo" src="./images/cust-brian.jpg" width="85" height="85" alt="Brian">
+                </picture>
+
+                <p class="swiper__text">Every day we come to you with friends after classes in college. We love your ice
+                    cream and
+                    casual atmosphere!</p>
+                <h2 class="swiper__title">Bryan, New-York</h2>
+            </div>
+
+            <div class="swiper-slide">
+
+                <picture>
+                    <source srcset="
+        ./images/cust-diana.jpg         1x,
+        ./images/cust-diana-2x.jpg      2x
+         " media="(min-width: 1200px)" />
+
+                    <img src="./images/cust-diana.jpg" width="85" height="85" alt="Diana">
+                </picture>
+
+                <p class="swiper__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really
+                    like the
+                    excellent service - always
+                    served politely and quickly!</p>
+                <h2 class="swiper__title">Diana, Chicago</h2>
+            </div>
+
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</section>
