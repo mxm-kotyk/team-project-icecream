@@ -38,6 +38,7 @@
   font-size: 26px;
   line-height: calc(33 / 26);
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   text-align: left;
   @include tablet {
     margin-bottom: 24px;
@@ -157,13 +158,13 @@
   margin-bottom: 12px;
   width: 139px;
   font-size: 12px;
-  line-height: 140%;
+  line-height: calc(17 / 12);
   color: $clr-text-light;
   @include desktop {
     margin-bottom: 24px;
     width: 200px;
     font-size: 14px;
-    line-height: 140%;
+    line-height: calc(20 / 14);
   }
 }
 
