@@ -26,6 +26,7 @@
             width:100%;
             height: auto;
             display: block;
+            overflow: hidden;
 
     border-radius: 24px;
 
@@ -36,7 +37,7 @@
 
     // Tablet
     @media screen and (min-width: 768px) {
-        top: -144px;
+        top: -44px;
         width: 100%;
             height: auto;
             display: block;
@@ -44,7 +45,7 @@
 
     // Desktop
     @media screen and (min-width: 1200px) {
-        top: -98px;
+        top: -20px;
         width: 100%;
             height: auto;
             display: block;
