@@ -55,12 +55,12 @@
 
                 <label class="about-product_form-field">
 
-                    <input type="text" class="about-product__input" placeholder="  "  required>
+                    <input type="text" class="about-product__input" placeholder="  "  required pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
                     <span class="about-product__label">Name</span>
                 </label>
 
                 <label class="about-product_form-field">
-                    <input type="tel" class="about-product__input" placeholder="  " required>
+                    <input type="tel" class="about-product__input" placeholder="  " required  pattern="^[ 0-9]+$">
                     <span class="about-product__label">Phone</span>
                 </label>
 
