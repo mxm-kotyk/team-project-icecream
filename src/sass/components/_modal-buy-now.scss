@@ -111,6 +111,7 @@
 }
 
 .modal-buy-now__radio-button-chekbox {
+  display: block;
   width: 132px;
   height: 136px;
   margin-top: 63px;
@@ -310,6 +311,10 @@
     font-size: 14px;
     height: 42px;
   }
+
+  &::placeholder {
+    color: transparent;
+  }
 }
 
 .modal-buy-now__textarea {
@@ -325,6 +330,11 @@
 
   outline: 0;
 
+  font-style: $ff-primary;
+  font-size: 12px;
+  line-height: 1.4;
+  color: $clr-text-dark;
+
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -335,18 +345,16 @@
 
   @media screen and (min-width: 768px) {
     height: 84px;
+    font-size: 14px;
+  }
+
+  &::placeholder {
+    color: transparent;
   }
 }
 
 .modal-buy-now__textarea::placeholder {
-  font-style: $ff-primary;
-  font-size: 12px;
-  line-height: 1.4;
-  color: $clr-text-dark;
 
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-  }
 }
 
 .modal-buy-now__submit-btn {
