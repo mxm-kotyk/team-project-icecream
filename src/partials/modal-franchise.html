@@ -5,32 +5,33 @@
         <use href="./images/icons.svg#icon-modal-close"></use>
       </svg>
     </button>
-    <p class="modal-text">Thank you for your interest in owning an Ice Cream shop</p>
-    <p class="modal-title">Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+    <p class="modal-title">Thank you for your interest in owning an Ice Cream shop</p>
+    <p class="modal-text">
+      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
       applications at this time. Once the application process resumes, we will contact you for further information.
       Please fill out the contact information below and we will reach out for additional information. We appreciate your
-      patience.</p>
-    <form class="modal-form">
-      <div class="input-wrapper">
-        <input type="name" name="user-name" class="modal-input" placeholder=" " id="user-name" required minlength="1"
-          pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
-        <label class="modal-label" for="phone">Name</label>
+      patience.
+    </p>
+    <form class="modal-form" autocomplete="off">
+      <div class="modal-form__inputs">
+        <div class="input-wrapper">
+          <input type="name" name="user-name" class="modal-input" placeholder="." id="user-name" required minlength="1" pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
+          <label class="modal-label" for="phone">Name</label>
+        </div>
+        <div class="input-wrapper">
+          <input type="phone" name="user-tel" class="modal-input" placeholder="." id="user-tel" required pattern="^[ 0-9]+$">
+          <label class="modal-label" for="phone">Phone</label>
+        </div>
+        <div class="input-wrapper">
+          <input type="email" name="user-email" class="modal-input" placeholder="." id="user-email" required>
+          <label class="modal-label" for="phone">Email</label>
+        </div>
+        <div class="input-wrapper">
+          <textarea name="user-text" id="user-text" class="text-area" placeholder="."></textarea>
+          <label class="modal-label" for="phone">Comment</label>
+        </div>
       </div>
-      <div class="input-wrapper">
-        <input type="phone" name="user-tel" class="modal-input" placeholder=" " id="user-tel" required
-          pattern="^[ 0-9]+$">
-        <label class="modal-label" for="phone">Phone</label>
-      </div>
-      <div class="input-wrapper">
-        <input type="email" name="user-email" class="modal-input" placeholder=" " id="user-email" required>
-        <label class="modal-label" for="phone">Email</label>
-      </div>
-      <div class="input-wrapper">
-        <textarea name="user-text" id="user-text" class="text-area" placeholder=" "></textarea>
-        <label class="modal-label" for="phone">Comment</label>
-        <button class="button-primary" type="submit">Submit</button>
-      </div>
+      <button class="button-primary" type="submit">Submit</button>
+    </form>
   </div>
-  </form>
-</div>
 </div>
