@@ -1,16 +1,50 @@
 <section class="section gallery">
     <div class="container">
         <div class="gallery__thumb" id="animation">
-            <img class="gallery__img" src="./images/gallery-mobile-1x.jpg"
-                alt="icecream-1" />
+
+                <picture>
+                    <source srcset="
+                                    ./images/gallery-desktop-1x.jpg         1x,
+                                    ./images/gallery-desktop-2x.png      2x
+                                  " media="(min-width: 1200px)" />
+
+                    <source srcset="
+                                    ./images/gallery-desktop-1x.jpg         1x,
+                                    ./images/gallery-desktop-2x.png      2x
+                                    " media="(min-width: 768px)"/>
+                
+                    <img class="swiper__photo" src="./images/gallery-desktop-1x.jpg" 
+                    alt="icecream-1">
+                </picture>
+
+<picture>
+    <source srcset="
+                    ./images/2-gallery-desktop-1x.jpg         1x,
+                    ./images/2-gallery-desktop-2x.jpg      2x
+                    " media="(min-width: 1200px)" />
+
+    <source srcset="
+                    ./images/2-gallery-desktop-1x.jpg         1x,
+                    ./images/2-gallery-desktop-2x.jpg      2x
+                    " media="(min-width: 768px)" />
             <img class="gallery__img" src="./images/gallery-slide-1.jpg"
                 alt="icecream-2" />
+</picture>
+<picture>
+    <source srcset="
+                    ./images/3-gallery-desktop-1x.jpg         1x,
+                    ./images/3-gallery-desktop-2x.jpg      2x
+                    " media="(min-width: 1200px)" />
+
+    <source srcset="
+                    ./images/2-gallery-desktop-1x.jpg         1x,
+                    ./images/2-gallery-desktop-2x.jpg      2x
+                    " media="(min-width: 768px)" />
+
             <img class="gallery__img" src="./images/gallery-slide-2.jpg"
                 alt="icecream-3" />
-            <img class="gallery__img" src="./images/gallery-mobile-1x.jpg" 
-            alt="icecream-4" />
-            <img class="gallery__img" src="./images/gallery-slide-1.jpg" 
-            alt="icecream-5" />
+</picture>
+            
         </div>
     </div>
 </section>
