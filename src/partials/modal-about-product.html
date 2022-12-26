@@ -1,13 +1,11 @@
 <div class="backdrop-about-product  modal-backdrop-about-product--is-hidden" data-modal-about-product>
     <div class="modal-about-product">
         <h2 class="about-product_title">Chololate icecream</h2>
-
         <div class="prod__image-box">
             <div class="prod__circle"></div>
             <img srcset="./images/about-prod.jpg 1x, ./images/about-prod-2x.jpg 2x" src="./images/about-prod.jpg"
                 alt="ice cream" class="prod__image" width="132">
         </div>
-
         <div class="about-product_value">
             <ul class="value__list">
                 <li class="value__item">
@@ -22,7 +20,6 @@
                 <li class="value__item">
                     <p class="value__text">40,4g</p><span class="value__name">Carbs</span>
                 </li>
-
             </ul>
         </div>
         <div class="ingredients">
@@ -47,44 +44,29 @@
                     <p class="ingredients_text">Vanilla sugar</p><span>10g</span>
                 </li>
             </ul>
-
         </div>
         <form class="modal__form" autocomplete="off">
             <div class="about-product_form">
-
-
                 <label class="about-product_form-field">
-
                     <input type="text" class="about-product__input" placeholder="." required
                         pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
                     <span class="about-product__label">Name</span>
                 </label>
-
                 <label class="about-product_form-field">
                     <input type="tel" class="about-product__input" placeholder="." required pattern="^[ 0-9]+$">
                     <span class="about-product__label">Phone</span>
                 </label>
-
-
-
-
                 <label class="about-product_form-field">
                     <textarea name="coment" class="about-product__textarea" placeholder="."></textarea>
                     <span class="about-product__label">Comment</span>
                 </label>
-
-
-
-
             </div>
-
             <button type="button" class="about-product__close" data-modal-about-product-close>
                 <svg class="about-product__close-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-icon-close"></use>
                 </svg>
             </button>
-
-            <button type="submit" class="about-product__button">Submit</button>
+            <button type="submit" class="about-product__button btn-filled">Submit</button>
         </form>
     </div>
 

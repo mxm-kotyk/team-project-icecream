@@ -214,12 +214,16 @@
 
   color: $clr-text-dark;
 
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .ingredients_text {
   display: flex;
   width: 100%;
+}
+
+.modal__form {
+  height: 200px;
 }
 
 .about-product_form {
@@ -345,12 +349,17 @@
   position: absolute;
   top: 12px;
   right: 12px;
+  width: 20px;
+  height: 20px;
   border: none;
   background-color: #fcfcfc;
   padding: 0;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
   &:hover,
   &:focus {
     color: $clr-accent;
@@ -358,11 +367,21 @@
 }
 
 .about-product__close-icon {
+  width: 100%;
+  height: 100%;
   fill: currentColor;
 }
 
 .about-product__button {
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  width: 132px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: $clr-text-dark;
+  @include tablet {
+    width: 121px;
+  }
 }
