@@ -20,10 +20,11 @@
   }
 }
 
-.modal {
+.modal-franchise {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -45vh);
   padding: 28px;
   width: 280px;
   background: $clr-text-light;
@@ -39,7 +40,7 @@
   }
 }
 
-.button-modal {
+.button-modal-fra-close {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -67,7 +68,12 @@
   }
 }
 
-.modal-title {
+.modal-fra-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-fra-title {
   margin-bottom: 20px;
   font-family: $ff-secondary;
   font-weight: 400;
@@ -85,7 +91,7 @@
   }
 }
 
-.modal-text {
+.modal-fra-text {
   font-family: $ff-primary;
   margin-bottom: 24px;
   font-family: $ff-primary;
@@ -112,12 +118,17 @@
   margin-bottom: 24px;
 
   @include tablet {
+    gap: 16px;
     margin-bottom: 32px;
   }
 }
 
 .input-wrapper {
   position: relative;
+  margin: 0 auto;
+  @include tablet {
+    width: 368px;
+  }
 }
 
 .modal-label {
@@ -143,7 +154,7 @@
 }
 
 .modal-input {
-  width: 100%;
+  width: 224px;
   height: 32px;
   padding-left: 12px;
   cursor: pointer;
@@ -195,7 +206,7 @@
 }
 
 .text-area {
-  width: 100%;
+  width: 224px;
   height: 64px;
   padding-top: 10px;
   padding-left: 12px;
@@ -221,6 +232,8 @@
   }
 
   @include tablet {
+    width: 368px;
+    height: 84px;
     font-size: 14px;
   }
 }
@@ -228,4 +241,15 @@
 .button-primary {
   display: block;
   margin: 0 auto;
+  width: 114px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: $clr-text-dark;
+  @include tablet {
+    width: 121px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
