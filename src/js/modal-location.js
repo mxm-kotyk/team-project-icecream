@@ -1,8 +1,8 @@
 (() => {
     const refs = {
-      openModalBtns: document.querySelectorAll("[mod-loc-open]"),
-      closeModalBtn: document.querySelector("[mod-loc-close]"),
-      modal: document.querySelector("[mod-loc]"),
+      openModalBtns: document.querySelectorAll("[data-mod-loc-open]"),
+      closeModalBtn: document.querySelector("[data-mod-loc-close]"),
+      modal: document.querySelector("[data-mod-loc]"),
     };
   
     refs.openModalBtns.forEach(btn=>btn.addEventListener("click", toggleModal));
