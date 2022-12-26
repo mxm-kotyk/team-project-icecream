@@ -13,12 +13,12 @@
 
 }
 
-.backdrop-about-product.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: visible;
+// .backdrop-about-product.is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+//     visibility: visible;
 
-}
+// }
 
 
 .modal-about-product {
@@ -292,11 +292,17 @@
         border-color: $clr-accent ;
         background-color: #fdf3ce;
     }
+&:not(:placeholder-shown):invalid {
+    border-color: rgb(255, 111, 111);
+    background-color: rgba(255, 150, 150, 0.726);
+}
+
 
     @include tablet {
         padding-left: 16px;
     }
 }
+
 
 .about-product__label {
     position: absolute;
