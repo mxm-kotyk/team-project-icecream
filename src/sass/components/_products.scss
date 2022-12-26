@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 
   @include pixel-ratio-x2 {
     background-image: url(../images/gallery-bg-mobile-2x.jpg);
