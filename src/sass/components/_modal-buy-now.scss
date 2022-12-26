@@ -304,7 +304,7 @@
     background-color: #fdf3ce;
   }
 
-  &:not(:focus):not(:placeholder-shown):invalid {
+  &:not(:placeholder-shown):invalid {
     border-color: rgb(255, 111, 111);
     background-color: rgba(255, 150, 150, 0.726);
   }
