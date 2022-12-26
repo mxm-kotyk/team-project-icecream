@@ -6,7 +6,7 @@
             </svg>
         </button>
         <p class="modal-buy-now__title">Buy now</p>
-        <form class="modal-buy-now__form" action="#">
+        <form class="modal-buy-now__form" action="#" autocomplete="off">
             <div class="modal-buy-now__radio-buttons">
                 <div class="modal-buy-now__radio-button">
                     <label class="modal-buy-now__radio-button-label" for="ice-cream">
@@ -46,9 +46,18 @@
                 </div>
             </div>
             <div class="modal-buy-now__input-list">
-                <input class="modal-buy-now__input" type="text" placeholder="Name">
-                <input class="modal-buy-now__input" type="text" placeholder="Phone">
-                <textarea class="modal-buy-now__textarea" name="" placeholder="Comment"></textarea>
+                <div class="modal-buy-now__input-field">
+                    <input id="name" class="modal-buy-now__input" type="text" placeholder=" " required minlength="1" pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
+                    <label class="modal-buy-now__input-label" for="name">Name</label>
+                </div>
+                <div class="modal-buy-now__input-field">
+                    <input id="phone" class="modal-buy-now__input" type="tel" placeholder=" " required pattern="^[ 0-9]+$">
+                    <label class="modal-buy-now__input-label" for="phone">Phone</label>
+                </div>
+                <div class="modal-buy-now__input-field">
+                    <textarea id="comment" class="modal-buy-now__textarea" placeholder=" "></textarea>
+                    <label class="modal-buy-now__input-label" for="comment">Comment</label>
+                </div>
             </div>
             <button class="modal-buy-now__submit-btn btn-filled" type="submit">Submit</button>
         </form>
