@@ -67,6 +67,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  cursor: pointer;
   @include desktop {
     width: 134px;
     height: 42px;
@@ -81,6 +82,7 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   text-decoration-line: underline;
+  cursor: pointer;
   @include tablet {
     width: 114px;
     height: 24px;
@@ -143,7 +145,22 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.hero__sub-btn-icon {
   fill: $clr-text-light;
+  transition: fill 150ms cubic-bezier(1, -0.14, 1, 1.29);
+
+  .hero__sub-btn:active & {
+    fill: $clr-button-hover;
+  }
+  @include desktop {
+    .hero__sub-btn:hover &,
+    .hero__sub-btn:focus & {
+      fill: $clr-button-hover;
+    }
+  }
 }
 
 .hero__sub-text-wrapper {
