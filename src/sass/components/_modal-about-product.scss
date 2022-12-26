@@ -259,7 +259,7 @@
   padding-left: 10.43px;
   outline: none;
 
-  &:hover,
+  // &:hover,
   &:focus {
     border-color: $clr-accent;
     background-color: #fdf3ce;
@@ -272,13 +272,17 @@
   @include tablet {
     padding-left: 16px;
   }
+
+  &::placeholder {
+    color: transparent;
+  }
 }
 
 .about-product__label {
   position: absolute;
   top: 0;
   left: 10.43px;
-  transform: translateY(50%);
+  transform: translateY(60%);
 
   font-family: $ff-primary;
   font-style: normal;
@@ -322,7 +326,7 @@
   outline: none;
   resize: none;
 
-  &:hover,
+  // &:hover,
   &:focus {
     border-color: $clr-accent;
     background-color: #fdf3ce;
@@ -330,6 +334,10 @@
 
   @include tablet {
     padding-left: 16px;
+  }
+
+  &::placeholder {
+    color: transparent;
   }
 }
 
