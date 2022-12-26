@@ -14,26 +14,21 @@
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // background-color: $clr-text-light;
-
-    // &.is-hidden .modal {
-    //     transform: translate(-50%, -50%) scale(0.5);
-    // }
+     &.is-hidden .modal {
+         transform: translate(-50%, -50%) scale(0.5);
+     }
     
-    // &.is-hidden {
-    //     opacity: 0;
-    //     pointer-events: none;
-    // }
+     &.is-hidden {
+         opacity: 0;
+         pointer-events: none;
+   }
 }
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     padding: 28px;
-    // height: 674px;
-    // width: 280px;
     width: 280px;
-    // min-height: 365px;
     background: $clr-text-light;
     border: 2px solid $clr-accent;
     border-radius: 10px;
@@ -41,9 +36,6 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    //   @include mobile {
-    //     width: 280px;
-    //   }
       @include tablet {
         width: 568px;
         min-height: 668px;
@@ -84,15 +76,6 @@
         line-height: 1.4;
       }
 }
-// .input-label {
-//     display: block;
-//     font-weight: 400;
-//     font-size: 12px;
-//     margin-bottom: 4px;
-//     margin-top: 10px;
-//     letter-spacing: 0.01em;
-//     color: var(--accent-text-color);
-// }
 .button-primary {
     display: flex;
     justify-content: center;
@@ -184,18 +167,6 @@
       border-color: rgb(255, 111, 111);
       background-color: rgba(255, 150, 150, 0.726);
     }
-    // &:focus {
-    //     border-color: var(--title-text-color);
-    // }
-    // &:focus + .input-icon {
-    //     fill: var(--title-text-color);
-    // }
-    // &:not(:focus):not(:placeholder-shown):valid {
-    //     background-color: rgba(0, 128, 0, 0.276);
-    // }
-    // &:not(:focus):not(:placeholder-shown):invalid {
-    //     background-color: rgba(128, 36, 0, 0.276);
-    // }
     &::placeholder, & {
         font-size: 12px;
         line-height: 1.21;
@@ -214,7 +185,6 @@
       }
 }
 .text-area {
-    // width: 224px;
     width: 100%;
     height: 64px;
     margin-bottom: 20px;
@@ -268,9 +238,6 @@
     fill: $clr-accent;
   }
 }
-// .modal-icon {
-//     fill: currentColor;
-// }
 .modal-form .button-primary {
     margin: 0 auto;
 }
