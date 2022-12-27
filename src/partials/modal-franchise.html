@@ -15,22 +15,22 @@
     <form class="modal-form" autocomplete="off">
       <div class="modal-form__inputs">
         <div class="input-wrapper">
-          <input type="name" name="user-name" class="modal-input" placeholder="." id="user-name" required minlength="1"
+          <input type="text" name="user-name" class="modal-input" placeholder="." id="user-name" required minlength="1"
             pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}">
-          <label class="modal-label" for="phone">Name</label>
+          <label class="modal-label" for="user-name">Name</label>
         </div>
         <div class="input-wrapper">
-          <input type="phone" name="user-tel" class="modal-input" placeholder="." id="user-tel" required
+          <input type="tel" name="user-tel" class="modal-input" placeholder="." id="user-tel" required
             pattern="^[ 0-9]+$">
-          <label class="modal-label" for="phone">Phone</label>
+          <label class="modal-label" for="user-tel">Phone</label>
         </div>
         <div class="input-wrapper">
           <input type="email" name="user-email" class="modal-input" placeholder="." id="user-email" required>
-          <label class="modal-label" for="phone">Email</label>
+          <label class="modal-label" for="user-email">Email</label>
         </div>
         <div class="input-wrapper">
           <textarea name="user-text" id="user-text" class="text-area" placeholder="."></textarea>
-          <label class="modal-label" for="phone">Comment</label>
+          <label class="modal-label" for="user-text">Comment</label>
         </div>
       </div>
       <button class="button-primary btn-filled" type="submit">Submit</button>

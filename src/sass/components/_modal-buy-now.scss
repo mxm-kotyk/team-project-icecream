@@ -55,8 +55,6 @@
   background-color: transparent;
   border: 0;
 
-  cursor: pointer;
-
   fill: $clr-text-dark;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,6 +122,7 @@
   margin-top: 63px;
 
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .modal-buy-now__radio-button-chekbox--green {
@@ -366,5 +365,4 @@
   margin: 0 auto;
   width: 121px;
   height: 42px;
-  cursor: pointer;
 }
