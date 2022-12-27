@@ -60,36 +60,40 @@
   }
 }
 
+.hero__btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 12px;
+  @include desktop {
+    gap: 34px;
+  }
+}
+
 .hero__prod-btn {
-  margin-right: 12px;
-  width: 108px;
-  height: 38px;
+  display: inline-block;
+  padding: 9px 24px;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
-  cursor: pointer;
+  color: inherit;
   @include desktop {
-    width: 134px;
-    height: 42px;
+    padding: 10px 32px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
   }
 }
 
 .hero__him-btn {
-  padding: 0;
-  width: 100px;
-  height: 24px;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
   text-decoration-line: underline;
-  cursor: pointer;
   @include tablet {
-    width: 114px;
-    height: 24px;
   }
   @include desktop {
-    width: 154px;
-    height: 40px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
   }
 }
 

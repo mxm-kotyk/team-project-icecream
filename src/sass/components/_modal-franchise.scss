@@ -61,7 +61,10 @@
   fill: $clr-text-dark;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
   &:hover,
   &:focus {
     fill: $clr-accent;

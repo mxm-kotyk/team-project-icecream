@@ -1,4 +1,5 @@
 .contacts {
+  padding-top: 0;
   padding-bottom: 60px;
 
   @include tablet {
@@ -23,6 +24,7 @@
   flex-direction: column;
   align-items: baseline;
   max-width: 368px;
+  z-index: 1;
 }
 .list-boxes__contacts {
   width: 100%;
