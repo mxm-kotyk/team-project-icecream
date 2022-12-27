@@ -130,7 +130,7 @@
   justify-content: center;
 }
 .margin-right-button {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 .button-locations__contacts {
   width: 196px;
@@ -178,8 +178,8 @@
     gap: 16px;
   }
   .margin-right-button {
-    margin-right:0;
-}
+    margin-right: 0;
+  }
   .container__contacts {
     max-width: 480px;
     padding: 0 20px;
@@ -228,7 +228,7 @@
     align-items: center;
     flex-direction: column;
   }
-  .button-locations__contacts {
+  .margin-right-button {
     margin-right: 0;
     margin-bottom: 16px;
   }
@@ -251,9 +251,6 @@
     margin-bottom: 40px;
     gap: 16px;
   }
-  .margin-right-button {
-    margin-right: 0;
-}
   .container__contacts {
     max-width: 768px;
     padding: 0 32px;
