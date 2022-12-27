@@ -100,11 +100,19 @@
   border-radius: 50%;
 }
 
+.about-product_value{
+margin-bottom: 40px;
+
+  @include tablet {
+      margin-bottom: 48px;
+    }
+}
+
 .value__list {
   display: flex;
   gap: 9px;
   justify-content: center;
-  margin-bottom: 40px;
+  
 
   @include tablet {
     gap: 20px;
@@ -222,6 +230,14 @@
   width: 100%;
 }
 
+.modal__form{
+  margin: auto;
+  width:  240px;
+  @include tablet{
+    width: 368px;
+  }
+}
+
 .about-product_form {
   position: relative;
   display: flex;
@@ -229,14 +245,12 @@
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
-  margin-bottom: 24px;
+  
 
-  @include mobile {
-    width: 240px;
-  }
+
 
   @include tablet {
-    width: 368px;
+    
     margin: auto;
     margin-bottom: 32px;
   }
