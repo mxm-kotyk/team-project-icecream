@@ -9,22 +9,23 @@
     }
 }
 .advantages__list {
+    width: 230px;
+    margin: 0 auto;
     @include tablet {
+        width: 616px;
         display: flex;
         justify-content: center;
-        gap: 80px;
-        padding: 0 44px;
-      
+        gap: 80px;    
     }
+
     @include desktop {
+        width: 1168px;
         gap: 32px;  
         padding: 0;     
     }
 }
 
 .advantages__item {
-    width: 230px;
-    margin: 0 auto;
   
     @include tablet {
 
@@ -36,11 +37,12 @@
         width: calc((100% - 64px) / 3);
     }
 }
+// -------------
 
 .advantages__item:not(:last-child){
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     @include tablet {
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -56,6 +58,16 @@
     padding: 0;
     margin: 0 auto;
     position: relative;
+
+    animation-name: rotating;
+    animation-duration: 2500ms;
+    animation-timing-function:initial;
+    animation-iteration-count: 1;
+    animation-delay: 600ms;
+  
+}
+.advantages__icon:hover {
+    animation-play-state: paused;
 }
 
 .advantages__icon::before {
@@ -110,6 +122,8 @@
     color: #FCFCFC;
     margin-bottom: 16px;
     margin-top: 16px;
+    animation-name: skewing;
+    animation-duration: 1000ms;
     @include tablet {
         font-size: 48px;
         line-height: calc(59 / 48);
@@ -143,3 +157,25 @@
         letter-spacing: 0.02em;
     }
 }
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg) scale(0.5);
+        border-radius: 10;
+        
+    }
+    
+
+    50% {
+        transform: rotate(360deg) scale(1.5);
+        border-radius: 25%;
+        
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);  
+        border-radius: 50%;     
+
+    }
+}
+
