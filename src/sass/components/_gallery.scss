@@ -104,6 +104,7 @@
   left: 0;
   display: flex;
   animation: slider 14s infinite;
+  animation-direction: alternate;
 }
 
 .slider img {
