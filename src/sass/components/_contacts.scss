@@ -101,6 +101,8 @@
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #131313;
+  display: flex;
+  flex-direction: column;
 }
 .list-times__contacts {
   margin-top: 32px;
@@ -127,8 +129,10 @@
   align-items: center;
   justify-content: center;
 }
+.margin-right-button {
+    margin-right: 16px;
+}
 .button-locations__contacts {
-  margin-right: 16px;
   width: 196px;
   height: 42px;
   display: flex;
@@ -173,6 +177,9 @@
     margin-bottom: 20px;
     gap: 16px;
   }
+  .margin-right-button {
+    margin-right:0;
+}
   .container__contacts {
     max-width: 480px;
     padding: 0 20px;
@@ -244,6 +251,9 @@
     margin-bottom: 40px;
     gap: 16px;
   }
+  .margin-right-button {
+    margin-right: 0;
+}
   .container__contacts {
     max-width: 768px;
     padding: 0 32px;
