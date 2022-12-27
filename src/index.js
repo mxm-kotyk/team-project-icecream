@@ -6,3 +6,5 @@ import './js/modal-read-more'
 import './js/script'
 import "./js/franchise-modal"
 
+import "./js/scroll-anim"
+
