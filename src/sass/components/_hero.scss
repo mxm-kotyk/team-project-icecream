@@ -1,11 +1,16 @@
 .hero {
-  padding-top: 0;
+  padding-top: 50px;
   padding-bottom: 0;
+  @include tablet {
+    padding-top: 14px;
+  }
+  @include desktop {
+    padding-top: 45px;
+  }
 }
 .hero__container {
   position: relative;
   height: 454px;
-  padding-top: 50px;
   background-image: url('../images/hero-bg-mobile.png');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -15,7 +20,6 @@
   }
   @include tablet {
     height: 349px;
-    padding-top: 14px;
     background-image: url('../images/hero-bg-tablet.png');
     @include pixel-ratio-x2 {
       background-image: url('../images/hero-bg-tablet-2x.png');
@@ -23,7 +27,6 @@
   }
   @include desktop {
     height: 591px;
-    padding-top: 45px;
     background-image: url('../images/hero-bg-desktop.png');
     @include pixel-ratio-x2 {
       background-image: url('../images/hero-bg-desktop-2x.png');
