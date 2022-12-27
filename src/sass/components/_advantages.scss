@@ -55,15 +55,6 @@
   padding: 0;
   margin: 0 auto;
   position: relative;
-
-  animation-name: rotating;
-  animation-duration: 2500ms;
-  animation-timing-function: initial;
-  animation-iteration-count: 1;
-  animation-delay: 600ms;
-}
-.advantages__icon:hover {
-  animation-play-state: paused;
 }
 
 .advantages__icon::before {
@@ -118,8 +109,6 @@
   color: #fcfcfc;
   margin-bottom: 16px;
   margin-top: 16px;
-  animation-name: skewing;
-  animation-duration: 1000ms;
   @include tablet {
     font-size: 48px;
     line-height: calc(59 / 48);
