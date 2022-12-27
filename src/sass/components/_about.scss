@@ -1,186 +1,185 @@
 .about {
-    padding-bottom: 50px;
-    @include tablet {
-        padding-bottom: 86px;
-    }
-    @include desktop {
-        padding-bottom: 99px;
-    }
+  padding-bottom: 0;
 }
 .about__subtitle {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    text-transform: uppercase;
-    color: $clr-text-light;
-    text-align: center;
-    margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-transform: uppercase;
+  color: $clr-text-light;
+  text-align: center;
+  margin-bottom: 12px;
 
-    @include tablet{
-        font-weight: 800;
-        font-size: 22px;
-        line-height: calc(27 / 22);
-        letter-spacing: 0.04em;
-    }
-    @include desktop {
-        font-size: 30px;
-        line-height: calc(37 / 30);
-    }
+  @include tablet {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
 }
 
 .about__title {
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (max-width:767px) {
-        max-width: 210px;
-    }
-    @include tablet {
-        margin-bottom: 72px;
-    }
-    @include desktop {
-        margin-bottom: 82px;
-    }
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    max-width: 210px;
+  }
+  @include tablet {
+    margin-bottom: 72px;
+  }
+  @include desktop {
+    margin-bottom: 82px;
+  }
 }
 .about__wrap {
-    position: relative;
-    @include tablet {
-        display: flex;
-        gap: 38px;
-    }
-    @include desktop {
-        gap: 109px;
-    }
+  position: relative;
+  @include tablet {
+    display: flex;
+    gap: 38px;
+  }
+  @include desktop {
+    gap: 109px;
+  }
 }
 .about__img-wrap {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 62px;
-    max-width: 279px;
-    aspect-ratio: 1;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
+  max-width: 279px;
+  aspect-ratio: 1;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140px;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 22px;
+    position: absolute;
+    background-image: url('../images/cow-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 140px;
-    &::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 22px;
-        position: absolute;
-        background-image: url('../images/cow-mobile.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 140px;
-        @include pixel-ratio-x2 {
-            background-image: url(../images/cow-mobile-2x.jpg);
-        }
-        @include mobile {
-            background-image: url(../images/cow-tablet.jpg);
-            @include pixel-ratio-x2 {
-                background-image: url(../images/cow-tablet-2x.jpg);
-                }
-        }
-        @include tablet {
-            top: 26px;
-            border-radius: 1228px;
-            background-image: url(../images/cow-desktop.jpg);
-            @include pixel-ratio-x2 {
-                background-image: url(../images/cow-desktop-2x.jpg);
-            }
-        }
-        @include desktop {
-            top: 39px;
-            border-radius: 1852.2px;
-        }
+    @include pixel-ratio-x2 {
+      background-image: url(../images/cow-mobile-2x.jpg);
+    }
+    @include mobile {
+      background-image: url(../images/cow-tablet.jpg);
+      @include pixel-ratio-x2 {
+        background-image: url(../images/cow-tablet-2x.jpg);
+      }
     }
     @include tablet {
-        min-width: 330px;
-        min-height: 330px;
-        border-radius: 165px;
-        margin-bottom: 0;
+      top: 26px;
+      border-radius: 1228px;
+      background-image: url(../images/cow-desktop.jpg);
+      @include pixel-ratio-x2 {
+        background-image: url(../images/cow-desktop-2x.jpg);
+      }
     }
     @include desktop {
-        min-width: 490px;
-        min-height: 490px;
-        border-radius: 250px;
-     }
+      top: 39px;
+      border-radius: 1852.2px;
+    }
+  }
+  @include tablet {
+    min-width: 330px;
+    min-height: 330px;
+    border-radius: 165px;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    min-width: 490px;
+    min-height: 490px;
+    border-radius: 250px;
+  }
 }
 
-.about__text-wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.about__text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    @include desktop {
-        margin-right: 121px;
-    }
+  @include desktop {
+    margin-right: 121px;
+  }
 }
 
 .about__text-list {
-    margin-bottom: 10px;
-    @include tablet {
-        margin-bottom: 32px;
-    }  
-    @include desktop {
-        min-width: 463px;
-        margin-bottom: 54px;
-    }
+  margin-bottom: 10px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    min-width: 463px;
+    margin-bottom: 54px;
+  }
 }
-.about__item{
-    margin-right: auto;
-    margin-left: auto;
-    @media screen and (max-width:767px) {
-        max-width: 220px;
-        &:nth-child(1){
-            margin-bottom: 4px;
-        }
-        }
-    @include tablet {
-        &:not(:last-child) {
-            margin-bottom: 8px;
-        }
+.about__item {
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    max-width: 220px;
+    &:nth-child(1) {
+      margin-bottom: 4px;
     }
+  }
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
 }
 .about__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(21 / 12);
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: $clr-text-light;
-    @include tablet {
-        text-align: start;
-    }
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(21 / 12);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $clr-text-light;
+  @include tablet {
+    text-align: start;
+  }
 
-    @include desktop {
-        font-size: 14px;
-        line-height: calc(27 / 14);
-    }
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(27 / 14);
+  }
 }
-.first-text{
-    @include desktop {
-        font-size: 16px;
-        line-height: calc(28 / 16);
-    }
+.first-text {
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
 }
-.third-text{
-    display: none;
-    @include tablet {
-        display: block;
-    }
+.third-text {
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }
 
 .about__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    width: 164px;
-    height: 42px;
-    @media screen  and (max-width:767px) {
-       margin-left: auto;
-       margin-right: auto;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 164px;
+  height: 42px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

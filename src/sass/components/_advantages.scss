@@ -1,181 +1,171 @@
 .advantages {
-    padding-bottom: 32px;
-    
-    @include tablet {
-        padding-bottom: 60px;
-    }
-    @include desktop {
-        padding-bottom: 80px;
-    }
+  padding-top: 50px;
+  padding-bottom: 0;
+
+  @include tablet {
+    padding-top: 86px;
+  }
+  @include desktop {
+    padding-top: 99px;
+  }
 }
 .advantages__list {
-    width: 230px;
-    margin: 0 auto;
-    @include tablet {
-        width: 616px;
-        display: flex;
-        justify-content: center;
-        gap: 80px;    
-    }
+  width: 230px;
+  margin: 0 auto;
+  @include tablet {
+    width: 616px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
 
-    @include desktop {
-        width: 1168px;
-        gap: 32px;  
-        padding: 0;     
-    }
+  @include desktop {
+    width: 1168px;
+    gap: 32px;
+    padding: 0;
+  }
 }
 
 .advantages__item {
-  
-    @include tablet {
-
-        width: calc((100% - 160px) / 3);
-        
-    }
-    @include desktop {
-       
-        width: calc((100% - 64px) / 3);
-    }
+  @include tablet {
+    width: calc((100% - 160px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 64px) / 3);
+  }
 }
 // -------------
 
-.advantages__item:not(:last-child){
-    margin-bottom: 28px;
-    @include tablet {
-        margin-bottom: 0;
-    }
+.advantages__item:not(:last-child) {
+  margin-bottom: 28px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background-color: #F8D24E;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #f8d24e;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
 
-    animation-name: rotating;
-    animation-duration: 2500ms;
-    animation-timing-function:initial;
-    animation-iteration-count: 1;
-    animation-delay: 600ms;
-  
+  animation-name: rotating;
+  animation-duration: 2500ms;
+  animation-timing-function: initial;
+  animation-iteration-count: 1;
+  animation-delay: 600ms;
 }
 .advantages__icon:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .advantages__icon::before {
-    content: '';
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 .cow::before {
-    background-image: url("../images/icon-cow.png");
-    @media (min-device-pixel-ratio: 2),
+  background-image: url('../images/icon-cow.png');
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url("../images/icon-cow-2x.png");
+      background-image: url('../images/icon-cow-2x.png');
     }
   }
 }
 
 .weight::before {
-    background-image: url("../images/icon-weight.png"); 
-    @media (min-device-pixel-ratio: 2),
+  background-image: url('../images/icon-weight.png');
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url("../images/icon-weight-2x.png");
+      background-image: url('../images/icon-weight-2x.png');
     }
-  }   
+  }
 }
 .ice-cream::before {
-    background-image: url("../images/icon-ice-cream.png"); 
-    @media (min-device-pixel-ratio: 2),
+  background-image: url('../images/icon-ice-cream.png');
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url("../images/icon-ice-cream-2x.png");
+      background-image: url('../images/icon-ice-cream-2x.png');
     }
-  }   
+  }
 }
 
 .advantages__point {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(44 / 36);
-    letter-spacing: 0.04em;
-    color: #FCFCFC;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    animation-name: skewing;
-    animation-duration: 1000ms;
-    @include tablet {
-        font-size: 48px;
-        line-height: calc(59 / 48);
-        text-transform: lowercase;
-        margin-top: 32px;
-        margin-bottom: 12px;
-    }
-    @include desktop {
-        font-size: 58px;
-        line-height: calc(71 / 58);
-        margin-top: 40px;
-    }
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(44 / 36);
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  animation-name: skewing;
+  animation-duration: 1000ms;
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+    text-transform: lowercase;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(71 / 58);
+    margin-top: 40px;
+  }
 }
 
 .advantages__text {
-    text-align: center;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: calc(20 / 12);
-    color: #FCFCFC;  
-    
-    @include tablet {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: calc(24 / 14);
-       
-    }
-    @include desktop {
-        font-size: 16px;
-        line-height: calc(28 / 16);
-        letter-spacing: 0.02em;
-    }
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  color: #fcfcfc;
+
+  @include tablet {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.02em;
+  }
 }
 
 @keyframes rotating {
-    from {
-        transform: rotate(0deg) scale(0.5);
-        border-radius: 10;
-        
-    }
-    
+  from {
+    transform: rotate(0deg) scale(0.5);
+    border-radius: 10;
+  }
 
-    50% {
-        transform: rotate(360deg) scale(1.5);
-        border-radius: 25%;
-        
-    }
+  50% {
+    transform: rotate(360deg) scale(1.5);
+    border-radius: 25%;
+  }
 
-    to {
-        transform: rotate(0deg) scale(1);  
-        border-radius: 50%;     
-
-    }
+  to {
+    transform: rotate(0deg) scale(1);
+    border-radius: 50%;
+  }
 }
-
