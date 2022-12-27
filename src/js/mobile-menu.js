@@ -19,9 +19,10 @@
       bodyRef.classList.remove('no-scroll');
     });
   });
-  menuBtnBuy.forEach(link => {
+menuBtnBuy.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenuRef.classList.remove('is-open');
+      menuBtnRef.classList.remove('is-open');
       bodyRef.classList.remove('no-scroll');
     });
   });
