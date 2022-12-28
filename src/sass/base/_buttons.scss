@@ -16,6 +16,8 @@
 }
 
 .btn-empty {
+  color: $clr-text-dark;
+  -webkit-text-fill-color: $clr-text-dark;
   border: 2px solid $clr-accent;
   border-radius: 10px;
   background: none;
@@ -50,6 +52,8 @@
 }
 
 .btn-filled {
+  color: $clr-text-dark;
+  -webkit-text-fill-color: $clr-text-dark;
   border-color: transparent;
   border-radius: 10px;
   background: $clr-accent;
