@@ -7,4 +7,6 @@ import './js/script'
 import "./js/franchise-modal"
 
 import "./js/scroll-anim"
+import "./js/to-top-button"
+
 

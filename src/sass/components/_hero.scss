@@ -237,3 +237,28 @@
     line-height: calc(17 / 14);
   }
 }
+
+#myBtn {
+  aspect-ratio: 1;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  background-color: $clr-accent;
+  color: $clr-text-dark;
+
+  padding: 26px 15px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 22px;
+  text-transform: uppercase;
+  &active {
+    background-color: $clr-button-hover;
+  }
+  @include desktop {
+    &:hover {
+      background-color: $clr-button-hover;
+    }
+  }
+}
