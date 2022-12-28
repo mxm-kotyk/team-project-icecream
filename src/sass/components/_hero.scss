@@ -239,26 +239,30 @@
 }
 
 #myBtn {
-  aspect-ratio: 1;
   display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
+  width: 64px;
+  height: 64px;
   z-index: 9;
-  background-color: $clr-accent;
-  color: $clr-text-dark;
-
-  padding: 26px 15px;
-  border-radius: 50%;
-  font-weight: 800;
-  font-size: 22px;
-  text-transform: uppercase;
-  &active {
-    background-color: $clr-button-hover;
+  background-image: url(../images/to-top/to-top-idle.png);
+  &:active {
+    background-image: url(../images/to-top/to-top-active.png);
   }
   @include desktop {
     &:hover {
-      background-color: $clr-button-hover;
+      background-image: url(../images/to-top/to-top-active.png);
     }
   }
+}
+
+.to-top {
+  position: absolute;
+  top: 5px;
+  left: 19px;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $clr-text-dark;
 }
